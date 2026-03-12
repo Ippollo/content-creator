@@ -69,6 +69,7 @@ Write the post following these rules:
 - Do NOT start with "I"
 - Do NOT include hashtags
 - Do NOT use em dashes (—). They read as AI-generated. Use a period, comma, or rewrite the sentence instead.
+- **Cascading lists**: When writing bullet/emoji lists, order items so each line is progressively shorter or longer than the previous. This creates a visual slope (funnel or ramp) that pulls the reader's eye down the page. **Logical and narrative order always takes priority.** If items must appear in a specific sequence, rewrite the items themselves (tighten or expand wording) to achieve the cascade rather than forcing a reorder that breaks the flow.
 
 #### Swipe File Rules
 
@@ -154,6 +155,9 @@ In this mode:
 3. Follow all normal voice, structure, and algo rules
 4. Still delegate to `content-reviewer` for scoring
 5. The post should feel like an original LinkedIn post, not an excerpt
+6. **Generate a first-comment** that links to the source article/case study. The comment must be relevant to the post's specific angle — not a generic "read more here." It should add context or tease additional depth that the reader would get from the full piece. Include a `[LINK]` placeholder where the URL will go. The comment is saved in the draft's frontmatter as `first_comment`.
+
+**Why a comment, not an in-post link?** LinkedIn suppresses posts with external links in the body. Placing the link in the first comment avoids the penalty while still driving traffic.
 
 ## Saving Drafts
 

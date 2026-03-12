@@ -70,6 +70,7 @@ For each approved atom:
 1. Invoke the appropriate platform skill (currently `linkedin-writer`)
 2. Pass the full article as source context and the specific angle/hook direction
 3. The platform skill writes the post using its own workflow, voice rules, and review process
+4. The platform skill also generates a **first-comment** with a link to the source content (links in post bodies are suppressed by LinkedIn)
 
 #### Step 4: Link Back
 

@@ -128,6 +128,18 @@ Only suggest when there's a genuinely standalone angle (a surprising metric, a c
 - **Save drafts** to `../../case-studies/drafts/YYYY-MM-DD-[slug].md` with full frontmatter (see `docs/reference.md`)
 - **Publish**: On "I've published the case study," move to `../../case-studies/published/`, update `status: published`, add `published_date`. No confirmation needed.
 
+## Cover Images
+
+Generate cover images using the `generate_image` tool, then resize to platform spec using **[Squoosh](https://squoosh.app)** — browser-based, no account required.
+
+| Platform | Dimensions | Ratio |
+|---|---|---|
+| LinkedIn Article | 1200 × 627px | 1.91:1 |
+| LinkedIn Post | 1200 × 628px | 1.91:1 |
+
+> [!NOTE]
+> LinkedIn requires a post caption when publishing an article. Treat this as a soft-launch announcement (2–3 lines max), not one of the planned LinkedIn atom posts. The article card renders automatically from the title and cover image.
+
 ## Related Skills
 
 - **Delegates to**: `content-reviewer` — scoring and rewrite loop (Step 5)

@@ -44,4 +44,5 @@ When writing without AI, the author:
 - **Trusts the reader**: Plants observations without over-explaining. States it, moves on, lets the reader do the work. ("Notice how most talk in terms of days and not hours worked." — no elaboration needed.)
 - **Whitespace is rhetorical**: Formatting choices like one name per line aren't aesthetic — they're pacing decisions that give each element individual weight.
 - **Cadence markers**: Uses unconventional punctuation as a deliberate rhythm tool (e.g., ".." as a spoken pause before a pivotal question). These are intentional, not typos.
+- **Cascading lists**: Lists should create a visual slope — each item progressively shorter or longer than the last. Logical/narrative order always takes priority. If the sequence matters, rewrite items to hit the cascade rather than forcing a reorder that breaks the flow.
 - **Structural thinker**: Evaluates posts by architecture first, words second. Will restructure an entire draft before wordsmithing a sentence.
