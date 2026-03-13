@@ -26,6 +26,7 @@ skills/
   case-study-writer/     — Case studies from real project experience
   content-multiplier/    — Orchestrates atomize/expand flows
   content-reviewer/      — Platform-agnostic quality scoring
+  content-calendar/      — Editorial calendar, scheduling, pillar balance
 
 strategy/
   pillars.md             — Niche, topic clusters, positioning
@@ -38,6 +39,8 @@ swipe-file/
   linkedin/              — Curated LinkedIn post examples
   blog/                  — Curated blog article examples
   case-studies/          — Curated case study examples
+
+editorial-calendar.md    — Persistent publishing schedule (managed by content-calendar)
 
 articles/
   drafts/                — Blog article drafts
@@ -78,6 +81,21 @@ Expand my post about [topic] into a full blog article.
 ### Write a standalone LinkedIn post
 ```
 Write a LinkedIn post about [topic].
+```
+
+### Schedule posts
+```
+Propose a schedule for my draft posts for the next 2 weeks.
+```
+
+### Batch publish
+```
+/publish
+```
+
+### Grab today's first-comment
+```
+/comment
 ```
 
 The agent reads your voice profile, strategy, SEO guidelines, and swipe files automatically via the appropriate skill.
