@@ -14,11 +14,12 @@ These are the most common mistakes when writing LinkedIn posts. Violating any of
 
 - **Em dashes (—)**: They read as AI-generated. Use a period, comma, or restructure the sentence.
 - **Hashtags**: Suppress algorithmic reach. Do not include them.
-- **Starting with "I"**: Weak hook. Always open with a hook that earns attention first.
+- **Starting with "I" (lazy version)**: Don't open with a throwaway "I" statement ("I think...", "I've been reflecting..."). But leading with "I" followed by a specific, credible action ("I built...", "I tracked...", "I spent 6 months...") is a valid pattern interrupt. It signals personal proof.
 - **Emojis in the first line**: Disqualifies the hook from being taken seriously.
 - **Copying swipe file content**: Learn patterns only — never copy or closely paraphrase.
 - **Corporate-speak or AI tells**: Phrases like "In today's fast-paced world" or "It's important to note" signal AI and break trust.
 - **Burying the hook**: If the reader has to scroll to understand what the post is about, you've lost them.
+- **Unverified stats**: If you include a number or statistic, it must be attributable to a named source (e.g., "Microsoft's 2025 Work Trend Index"). If you can't find a credible source, rewrite the line without the number. Impressive-sounding stats that aren't real destroy trust instantly.
 
 ---
 
@@ -58,6 +59,7 @@ Write the post following these rules:
 - Match the user's natural sentence patterns, vocabulary, and tone from the voice profile
 - Sound like a real human, not a corporate brand or an AI
 - Use the user's actual experiences and domain expertise as raw material
+- **Plain language filter**: Read every sentence out loud. If a word wouldn't come up in a conversation with a friend, replace it. Common swaps: "diagnostic" → "the right", "actionable steps" → "clear next steps", "methodology" → "framework" or cut entirely, "objective" → "goal", "optimize" → "improve" or "fix", "alignment" → "direction" or "everyone pointing the same way", "reorienting" → "getting back on track". When in doubt, pick the shorter, simpler word. Target a 6th–8th grade reading level (Hemingway App scale) as a sanity check. Technical terms from the user's domain are exempt — the goal is simple structure and plain word choice, not dumbing down the expertise.
 
 #### Structure Rules
 
