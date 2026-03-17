@@ -157,9 +157,12 @@ In this mode:
 3. Follow all normal voice, structure, and algo rules
 4. Still delegate to `content-reviewer` for scoring
 5. The post should feel like an original LinkedIn post, not an excerpt
-6. **Generate a first-comment** that links to the source article/case study. The comment must be relevant to the post's specific angle — not a generic "read more here." It should add context or tease additional depth that the reader would get from the full piece. Include a `[LINK]` placeholder where the URL will go. The comment is saved in the draft's frontmatter as `first_comment`.
+6. **Generate a first-comment** that links to the source article/case study. The comment must be relevant to the post's specific angle, not a generic "read more here." It should add context or tease additional depth that the reader would get from the full piece. Include a `[LINK]` placeholder where the URL will go. The comment is saved in the draft's frontmatter as `first_comment`.
 
 **Why a comment, not an in-post link?** LinkedIn suppresses posts with external links in the body. Placing the link in the first comment avoids the penalty while still driving traffic.
+
+> [!IMPORTANT]
+> **First-comments are only for Atomize Mode**, where the post links to the user's own content (articles, case studies). Standalone posts (including posts reacting to external news articles) do **not** get a first-comment. There is no owned content to drive traffic to.
 
 ## Saving Drafts
 
