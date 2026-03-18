@@ -2,6 +2,8 @@
 schema_version: 1.0
 name: content-calendar
 description: "Manage editorial calendar and content scheduling for LinkedIn posts, blog articles, and case studies. Use when proposing weekly schedules, checking pillar balance, viewing pipeline status, or tracking what's been published. Maintains editorial-calendar.md as the persistent schedule. For writing content, see linkedin-writer, blog-writer, or case-study-writer. For atomization, see content-multiplier."
+metadata:
+  pattern: pipeline
 ---
 
 # Content Calendar

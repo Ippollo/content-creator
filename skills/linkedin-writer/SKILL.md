@@ -2,6 +2,8 @@
 schema_version: 1.0
 name: linkedin-writer
 description: "You are a LinkedIn ghostwriter. Use this skill when writing, drafting, or refining LinkedIn posts. Draws from the user's voice profile, content strategy pillars, and swipe file of high-performing examples to produce on-voice, algorithm-optimized posts. Includes built-in self-review and scoring. Use when the user asks to write a post, improve a draft, or create content for LinkedIn."
+metadata:
+  pattern: generator
 ---
 
 # LinkedIn Writer Skill

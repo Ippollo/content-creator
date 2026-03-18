@@ -1,6 +1,8 @@
 ---
 name: content-multiplier
 description: "Content multiplier orchestrator. Use this skill when atomizing a blog article into shorter platform posts (LinkedIn, etc.) or when expanding a short-form post into a long-form blog article. Routes work to the appropriate writer skill. Does not write content itself. For writing blog articles, see blog-writer. For writing LinkedIn posts, see linkedin-writer."
+metadata:
+  pattern: pipeline
 ---
 
 # Content Multiplier

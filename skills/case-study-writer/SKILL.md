@@ -1,6 +1,8 @@
 ---
 name: case-study-writer
 description: "Case study ghostwriter for building credibility content from real project experience. Use this skill when writing, drafting, or refining case studies that demonstrate work outcomes. Guides evidence gathering, confidentiality filtering, and narrative structuring using the SCAR framework. Includes self-review via content-reviewer and auto-suggests atomization via content-multiplier. Use when the user asks to document a project, write a case study, or turn project results into content. For general blog articles, see blog-writer. For LinkedIn posts, see linkedin-writer."
+metadata:
+  pattern: generator
 ---
 
 # Case Study Writer

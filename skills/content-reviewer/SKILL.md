@@ -2,6 +2,8 @@
 schema_version: 1.0
 name: content-reviewer
 description: "Platform-agnostic self-review engine for social content. Use this skill when evaluating, scoring, and iteratively improving a drafted post before presenting it to the user. Called by platform skills (linkedin-writer, etc.) which supply their platform-specific rubrics. Do not invoke directly — platform skills delegate to this."
+metadata:
+  pattern: reviewer
 ---
 
 # Content Reviewer Skill

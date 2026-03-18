@@ -1,6 +1,8 @@
 ---
 name: blog-writer
 description: "Long-form SEO blog ghostwriter for a personal branding site. Use this skill when writing, drafting, or refining blog articles targeting search keywords. Draws from the user's voice profile, content pillars, SEO guidelines, and blog swipe file. Includes self-review via content-reviewer. Use when the user asks to write a blog post, expand on a topic, or create long-form content. For LinkedIn posts, see linkedin-writer."
+metadata:
+  pattern: generator
 ---
 
 # Blog Writer
