@@ -38,12 +38,15 @@ Before using this skill, read:
 
 ### 1. Gather Context
 
-- Read the voice profile for tone, sentence patterns, and vocabulary
-- Read the strategy for niche alignment and topic clusters
-- Read 3–5 swipe file examples most relevant to the requested archetype or topic
-- Read the algorithm guidelines for current formatting, engagement, and CTA rules
+<!-- Read at this step: voice-guide.md, pillars.md, algorithm.md -->
+
+- Read `../../voice/voice-guide.md` for tone, sentence patterns, and vocabulary
+- Read `../../strategy/pillars.md` for niche alignment and topic clusters
+- Read `../../strategy/algorithm.md` for current formatting, engagement, and CTA rules
 
 ### 2. Analyze Swipe Patterns
+
+<!-- Read at this step: 3–5 examples from ../../swipe-file/linkedin/ most relevant to the topic -->
 
 For each swipe example, identify:
 
@@ -82,7 +85,13 @@ Write the post following these rules:
 - Blend patterns from multiple examples rather than mimicking one
 - If the user's voice conflicts with a swipe pattern, prioritize voice
 
-### 4. Self-Review and Rewrite
+### 4. Checklist Gate
+
+<!-- Read at this step: eval/checklist.md -->
+
+Run every item in `eval/checklist.md` against the draft. This catches mechanical failures (em dashes, hashtags, character count, stat sourcing) before the subjective review. Fix any failures before proceeding.
+
+### 5. Self-Review and Rewrite
 
 Delegate to the **`content-reviewer`** skill with the following inputs:
 
@@ -98,9 +107,20 @@ quality_bar: 9
 max_passes: 3
 ```
 
-`content-reviewer` will score, rewrite if needed, and return the final post + review notes. Use that output to populate Step 5.
+`content-reviewer` will score, rewrite if needed, and return the final post + review notes.
 
-### 5. Present the Post
+### 6. Persona Review
+
+<!-- Read at this step: eval/review-personas.md -->
+
+Run the two reviewer personas from `eval/review-personas.md` against the post returned by `content-reviewer`:
+
+1. **The Scroller** — Would a busy feed reader stop, finish, engage, and remember this post?
+2. **The Voice Judge** — Does this sound like the author or like a ghostwriter?
+
+If either persona flags critical issues (Scroller says "would not stop" or Voice Judge says "does not sound like the author"), revise the post and re-run the checklist gate. Do not re-run content-reviewer unless the revisions are substantial.
+
+### 7. Present the Post
 
 Output the final post in this format:
 
@@ -116,12 +136,13 @@ Output the final post in this format:
 [Full post content here]
 ```
 
-Below the post, include a brief "Review Notes" section listing:
+Below the post, include:
 
-- What was caught and fixed during self-review (if anything)
+- **Review Notes**: What was caught and fixed during self-review (checklist gate + content-reviewer + persona review)
+- **Persona Summary**: 1-line Scroller verdict + 1-line Voice Judge verdict
 - Any remaining trade-offs or items the user might want to adjust
 
-### 6. Iterate
+### 8. Iterate
 
 Ask the user for feedback. Common refinements:
 
