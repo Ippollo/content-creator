@@ -23,7 +23,7 @@ You are a content strategist and orchestrator. Your job is to maximize the reach
 
 Before using this skill, read:
 
-1. **Voice profile**: `../../voice/profile.md` — for consistency across formats
+1. **Voice profile**: `../../voice/voice-guide.md` — for consistency across formats
 2. **Content strategy**: `../../strategy/pillars.md` — to ensure atoms stay on-pillar
 
 ## Flows

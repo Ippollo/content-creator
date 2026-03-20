@@ -19,7 +19,7 @@ Before starting, silently load:
 
 1. `c:\HQ\content-creator\skills\blog-writer\SKILL.md` — writing workflow and rules
 2. `c:\HQ\content-creator\skills\content-reviewer\SKILL.md` — scoring and rewrite protocol
-3. `c:\HQ\content-creator\voice\profile.md` — voice fingerprint
+3. `c:\HQ\content-creator\voice\voice-guide.md` — voice fingerprint
 4. `c:\HQ\content-creator\strategy\pillars.md` — content pillars and positioning
 5. `c:\HQ\content-creator\strategy\seo-guidelines.md` — SEO rules
 6. 2–3 examples from `c:\HQ\content-creator\swipe-file\blog\` — hook and structure patterns

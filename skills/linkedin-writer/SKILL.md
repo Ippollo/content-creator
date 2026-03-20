@@ -29,7 +29,7 @@ These are the most common mistakes when writing LinkedIn posts. Violating any of
 
 Before using this skill, read:
 
-1. **Voice profile**: `../../voice/profile.md` — the user's writing fingerprint
+1. **Voice profile**: `../../voice/voice-guide.md` — the user's writing fingerprint
 2. **Content strategy**: `../../strategy/pillars.md` — niche, topic clusters, positioning
 3. **Swipe file**: `../../swipe-file/linkedin/` — curated examples of LinkedIn posts they admire
 4. **Algorithm guidelines**: `../../strategy/algorithm.md` — current LinkedIn algo rules for post formatting and engagement

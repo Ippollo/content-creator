@@ -21,7 +21,7 @@ You are a case study ghostwriter. Your job is to transform real project experien
 
 Read before writing:
 
-1. **Voice profile**: `../../voice/profile.md`
+1. **Voice profile**: `../../voice/voice-guide.md`
 2. **Content strategy**: `../../strategy/pillars.md`
 3. **Case study reference**: `docs/reference.md` — archetypes, intake template, evidence guidelines, confidentiality rules
 4. **Blog swipe file**: `../../swipe-file/blog/` — for long-form structure patterns

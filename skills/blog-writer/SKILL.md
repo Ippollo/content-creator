@@ -23,7 +23,7 @@ You are a long-form blog ghostwriter for a personal branding site. Your job is t
 
 Read before writing:
 
-1. **Voice profile**: `../../voice/profile.md`
+1. **Voice profile**: `../../voice/voice-guide.md`
 2. **Content strategy**: `../../strategy/pillars.md`
 3. **SEO guidelines**: `../../strategy/seo-guidelines.md`
 4. **Blog swipe file**: `../../swipe-file/blog/`

@@ -13,7 +13,7 @@ Before starting, read these files (do NOT scan directories, paths are fixed):
 1. `c:\HQ\content-creator\skills\content-multiplier\SKILL.md` — orchestration logic and angle identification
 2. `c:\HQ\content-creator\skills\linkedin-writer\SKILL.md` — post writing rules and Atomize Mode
 3. `c:\HQ\content-creator\skills\content-reviewer\SKILL.md` — scoring protocol and rubrics
-4. `c:\HQ\content-creator\voice\profile.md` — voice fingerprint
+4. `c:\HQ\content-creator\voice\voice-guide.md` — voice fingerprint
 5. `c:\HQ\content-creator\strategy\pillar.md` — content pillars and positioning
 6. `c:\HQ\content-creator\strategy\algorithm.md` — LinkedIn algorithm rules
 7. 2-3 relevant examples from `c:\HQ\content-creator\swipe-file\linkedin\` — for hook/structure patterns
