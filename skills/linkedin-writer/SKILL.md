@@ -77,6 +77,8 @@ Write the post following these rules:
 - Do NOT include hashtags
 - Do NOT use em dashes (—). They read as AI-generated. Use a period, comma, or rewrite the sentence instead.
 - **Cascading lists**: When writing bullet/emoji lists, order items so each line is progressively shorter or longer than the previous. This creates a visual slope (funnel or ramp) that pulls the reader's eye down the page. **Logical and narrative order always takes priority.** If items must appear in a specific sequence, rewrite the items themselves (tighten or expand wording) to achieve the cascade rather than forcing a reorder that breaks the flow.
+- **Diagnosis OR solution, not both**: A short-form post should either diagnose a problem or present a solution. Trying to do both forces too much explanation into too little space and leaves the reader confused. If the solution requires jargon or new concepts the reader doesn't already know, cut the solution and let the post be the diagnosis. The article or first-comment handles the rest.
+- **No stacked paraphrases**: If two consecutive paragraphs say the same thing in different words ("you become the memory" followed by "you become the integration layer"), cut one. Each paragraph must advance the argument, not restate the previous one.
 
 #### Swipe File Rules
 

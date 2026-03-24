@@ -30,9 +30,10 @@ These require reading against the voice profile. Flag any violation.
 
 These verify the post architecture.
 
-- [ ] **Hook stops the scroll**: The first 1-2 lines must create curiosity, tension, or a bold claim. If the hook is a passive observation, rewrite.
+- [ ] **Hook stops the scroll**: The first 1-2 lines must create curiosity, tension, or a contradiction the reader *feels*. A correct observation ("Adding prompt 21 takes the same effort as number 1") is not a hook. A felt contradiction ("You have 30 prompts saved. You still start from scratch every session.") is. If the hook is analytical rather than visceral, rewrite.
 - [ ] **Doesn't open with throwaway "I"**: "I think..." or "I've been reflecting..." are weak. "I built..." or "I tracked..." with specific proof is fine.
 - [ ] **Single core argument**: Can you remove any section and the post's core argument still stands complete? If yes, that section is a second idea — cut or rework.
-- [ ] **CTA present and specific**: The post ends with a direct question or invitation to engage. Not "thoughts?" — something specific to the topic.
+- [ ] **CTA present and specific**: The post ends with a direct question or invitation to engage. Not "thoughts?" — something specific to the topic. The question must be **answerable from lived experience**, not a hypothetical ("What would you build if..." is abstract; "How many prompts do you have saved right now?" is concrete and answerable).
 - [ ] **All stats have named sources**: If a number or statistic appears, it must be attributable to a named source (e.g., "Microsoft's 2025 Work Trend Index"). No made-up stats.
 - [ ] **Cascading lists**: If the post uses a bullet/emoji list, items should be progressively shorter or longer. Rewrite items to achieve the cascade if logical order prevents reordering.
+- [ ] **No repeated rhetorical patterns**: If the same sentence structure appears twice in the post (e.g., two "That's X, not Y" lines, or two "The problem isn't A. It's B." constructions), cut or rewrite one. Repeating a pattern dilutes the impact of both instances.
