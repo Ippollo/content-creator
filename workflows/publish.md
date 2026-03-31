@@ -1,81 +1,126 @@
 ---
-description: Batch scheduling session — serve queued posts one-by-one for LinkedIn scheduling, then update all files and calendar on completion.
+description: Batch schedule approved posts to Buffer and update all tracking files.
 ---
 
-# /publish — Batch Scheduling Session
+# /publish — Schedule to Buffer
 
-**Goal**: Schedule 1-4 weeks of content on LinkedIn in one sitting, then update all tracking files automatically.
+**Goal**: Push all `approved` posts to Buffer in one batch, update the editorial calendar and frontmatter, and move files to `published/`.
+
+## Status Lifecycle
+
+```
+draft → approved → scheduled
+```
+
+- **`draft`** — post created (via /atomize, /write-article, manual, etc.). Lives in `linkedin/drafts/`
+- **`approved`** — user has reviewed and approved the final version. Still in `drafts/`, ready to push
+- **`scheduled`** — pushed to Buffer with a date. File moved to `linkedin/published/`
+
+Buffer handles everything after scheduling — no `published` status needed in our system.
 
 ## Prerequisites
 
-- `editorial-calendar.md` exists with scheduled posts (use the `content-calendar` skill to create one first)
-- Posts in `linkedin/drafts/` have been reviewed and approved
+- `editorial-calendar.md` has posts with status `approved` and assigned dates
+- Corresponding draft files exist in `linkedin/drafts/`
+- `.env` has a valid `BUFFER_ACCESS_TOKEN`
 
 ## Steps
 
 // turbo-all
 
-### Step 1: Show the Queue
+### Step 1: Find Approved Posts
 
-Read `editorial-calendar.md` for all posts with status `scheduled` (or `draft` if nothing is scheduled yet).
+Read `editorial-calendar.md`. For each weekly schedule table, find rows where Status = `approved`.
 
-Display them in chronological order:
+For each match, resolve the actual date:
+- The week header (e.g., `## Week of 2026-04-06`) gives the Monday date
+- The Day column (`Mon`=+0, `Tue`=+1, `Wed`=+2, `Thu`=+3, `Fri`=+4) gives the offset
+- Calculate the full ISO date
 
-```
-📅 Scheduling Session — X posts queued
+Find the corresponding draft file. Check both locations:
+1. `linkedin/drafts/` — look for files matching the slug (e.g., `*-information-overload.md`)
+2. `linkedin/published/` — some posts may have been moved early
 
-1. Mon Mar 17 | tyranny-of-urgent       | Ops & CX
-2. Tue Mar 18 | interruption-tax        | Ops & CX
-3. Thu Mar 20 | custom-ai-advisor       | AI Agents
-...
+If no file is found for a slug, flag it as missing and skip.
 
-Ready? I'll serve them one at a time. Say "next" to advance, "skip" to skip one, or "done" to end the session.
-```
+### Step 2: Preview the Batch
 
-### Step 2: Serve Posts One-by-One
-
-For each post in the queue:
-
-1. Read the full post from `linkedin/drafts/[slug].md`
-   - **If file not found**: Display "⚠️ [slug] not found in drafts — skipping" and auto-advance
-2. Copy the post body (everything below the frontmatter `---`) to clipboard
-3. Display the post text for reference
-4. Wait for user input:
-   - **"next"** → mark this post as served, advance to the next
-   - **"skip"** → skip this post (stays in drafts, not marked as served)
-   - **"done"** → end the session early
+Display a confirmation table:
 
 ```
-Post 1/8 — tyranny-of-urgent — copied to clipboard ✅
+📅 Publish to Buffer — X posts
 
-[post text displayed here]
+  # | Date       | Post                 | Pillar        | File
+  1 | 2026-04-07 | information-overload | Ops & CX      | ✅ found
+  2 | 2026-04-08 | ceo-ai-adoption      | AI Agents     | ✅ found
+  3 | 2026-04-14 | ai-not-the-problem   | AI Agents     | ✅ found
 
-→ next / skip / done
+Confirm? (go / cancel)
 ```
 
-### Step 3: Close Session
+### Step 3: Push to Buffer
 
-When the user says "done" or all posts have been served:
+For each post in the batch:
 
-1. **Move files**: For each served (non-skipped) post, move from `linkedin/drafts/` to `linkedin/published/`
-2. **Update frontmatter**: Add `status: published` and `scheduled_date: YYYY-MM-DD` to each moved file
-3. **Update calendar**: Change status from `scheduled` → `published` in `editorial-calendar.md`
-4. **Update vault notes**: For each moved post, check `source_note` frontmatter and add to the vault note's `## Published` section if not already there
-
-Display summary:
+1. Run: `node scripts/buffer-publish.js <file-path> --date <YYYY-MM-DD>T08:00:00-06:00`
+2. Capture the Buffer post ID from the output
+3. Display result inline:
 
 ```
-✅ Session complete
+  ✅ information-overload → Buffer (2026-04-07)
+  ✅ ceo-ai-adoption → Buffer (2026-04-08)
+  ❌ ai-not-the-problem → Error: [message]
+```
 
-Scheduled: X posts through [last date]
-Skipped:   X posts (remain in drafts)
-Remaining: X unscheduled drafts in backlog
+If any post fails, continue with the rest. Report failures at the end.
 
-Next session: You have content through [date].
+### Step 4: Update Tracking
+
+For each successfully scheduled post:
+
+1. **Update frontmatter**: Set `status: scheduled` and add `buffer_date: YYYY-MM-DD`
+2. **Move file**: If in `linkedin/drafts/`, move to `linkedin/published/`
+3. **Update calendar**: Change status from `approved` → `scheduled` in `editorial-calendar.md`
+
+For failed posts, leave status as `approved` so they can be retried.
+
+### Step 5: Summary
+
+```
+✅ Publish complete
+
+  Scheduled: X posts (through YYYY-MM-DD)
+  Failed:    X posts (remain as approved)
+
+  Buffer queue: run `node scripts/buffer-publish.js --pending` to verify
+```
+
+## Buffer Script Reference
+
+```bash
+# List connected channels
+node scripts/buffer-publish.js --channels
+
+# Preview what would be sent (no actual post)
+node scripts/buffer-publish.js <draft.md> --dry-run
+
+# Schedule for a specific date
+node scripts/buffer-publish.js <draft.md> --date 2026-04-07T08:00:00-06:00
+
+# Add to next queue slot
+node scripts/buffer-publish.js <draft.md> --queue
+
+# Post immediately
+node scripts/buffer-publish.js <draft.md> --now
+
+# Show pending posts in Buffer queue
+node scripts/buffer-publish.js --pending
 ```
 
 ## Notes
 
+- All posts are scheduled at **8:00 AM Mountain** by default. Adjust the time in the command if needed.
 - First-comments are NOT part of this workflow. Use `/comment` daily when posts go live.
-- If `editorial-calendar.md` doesn't exist or is empty, suggest running the `content-calendar` skill first.
-- Posts are served in the order they appear in the calendar (chronological).
+- If `editorial-calendar.md` doesn't exist or has no `approved` posts, exit with a message.
+- Buffer API token expires (check duration at regeneration). Regenerate at https://publish.buffer.com/settings/api
+- The `/publish` workflow does NOT assign dates. Dates come from the editorial calendar, which is built intentionally before this step.

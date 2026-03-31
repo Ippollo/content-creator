@@ -11,10 +11,10 @@ The editorial calendar lives at `c:\HQ\content-creator\editorial-calendar.md`.
 
 | Day | Post | Pillar | Status |
 |-----|------|--------|--------|
-| Mon | slug | Pillar Name | draft / scheduled / published |
-| Tue | slug | Pillar Name | draft / scheduled / published |
-| Thu | slug | Pillar Name | draft / scheduled / published |
-| Fri | slug | Pillar Name | draft / scheduled / published |
+| Mon | slug | Pillar Name | draft / approved / scheduled |
+| Tue | slug | Pillar Name | draft / approved / scheduled |
+| Thu | slug | Pillar Name | draft / approved / scheduled |
+| Fri | slug | Pillar Name | draft / approved / scheduled |
 
 ## Backlog
 
@@ -23,11 +23,17 @@ The editorial calendar lives at `c:\HQ\content-creator\editorial-calendar.md`.
 | slug | Pillar Name | note name |
 ```
 
-## Status Meanings
+## Status Lifecycle
 
-- `draft` — proposed but not yet scheduled on LinkedIn
-- `scheduled` — scheduled on LinkedIn, awaiting go-live
-- `published` — live on LinkedIn
+```
+draft → approved → scheduled
+```
+
+- `draft` — post created, not yet reviewed
+- `approved` — user has reviewed and approved the final version, ready to push to Buffer
+- `scheduled` — pushed to Buffer with a scheduled date. File moved to `linkedin/published/`
+
+Buffer handles actual publishing. No `published` status tracked in our system.
 
 ## Pillar Mapping
 

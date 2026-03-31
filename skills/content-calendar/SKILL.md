@@ -113,10 +113,10 @@ Read all directories and `editorial-calendar.md`, then present:
 📊 Content Pipeline
 
 Drafts:     X posts (linkedin), X articles, X case studies
+Approved:   X posts ready to push to Buffer
 Scheduled:  X posts through [last scheduled date]
-Published:  X posts, X articles, X case studies
 
-Next scheduled: [slug] on [date]
+Next up: [slug] on [date]
 Backlog:    X unscheduled drafts
 
 ⚠️ Pillar gap: No [pillar] content scheduled in the next 2 weeks
@@ -124,35 +124,31 @@ Backlog:    X unscheduled drafts
 
 ---
 
-### Flow 3: Update Calendar
+### Flow 3: Update Calendar After Publish
 
-Use when posts have been batch-scheduled via `/publish` and the calendar needs updating. This is typically called automatically by the `/publish` workflow at session close, not invoked directly.
+Use after `/publish` has pushed posts to Buffer. This flow updates tracking files so the calendar reflects the new state.
 
-#### Step 1: Identify served posts
+#### Step 1: Identify scheduled posts
 
-Receive the list of posts that were served (not skipped) during the `/publish` session.
+Receive the list of posts that were successfully pushed to Buffer during the `/publish` session.
 
 #### Step 2: Move files
 
-For each served post, move from `linkedin/drafts/[slug].md` to `linkedin/published/[slug].md`.
+For each scheduled post, move from `linkedin/drafts/[slug].md` to `linkedin/published/[slug].md`.
 
-If the file doesn't exist in drafts (e.g., already moved manually), skip it and note the discrepancy.
+If the file is already in `published/` (e.g., moved during a prior session), skip and note.
 
 #### Step 3: Update frontmatter
 
-Add to each moved file:
+Set in each moved file:
 ```yaml
-status: published
-scheduled_date: YYYY-MM-DD
+status: scheduled
+buffer_date: YYYY-MM-DD
 ```
 
 #### Step 4: Update calendar
 
-In `editorial-calendar.md`, change the status of each served post from `scheduled` → `published`.
-
-#### Step 5: Update vault notes
-
-For each served post, read `source_note` from frontmatter. If the vault note exists and doesn't already reference this post in its `## Published` section, add the wikilink.
+In `editorial-calendar.md`, change the status of each post from `approved` → `scheduled`.
 
 ---
 

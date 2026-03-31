@@ -198,13 +198,13 @@ When the user approves a post, save it to `../../drafts/` as a markdown file:
 
 ## Publishing
 
-When the user says they have scheduled the post, immediately:
+Post lifecycle after saving:
 
-1. Move the file from `../../drafts/` to `../../published/`
-2. Add `status: published` and `scheduled_date: YYYY-MM-DD` to the YAML frontmatter
-3. Delete the original draft file
+1. **Draft saved** → frontmatter has `status: draft`
+2. **User approves** → update frontmatter to `status: approved`
+3. **`/publish` runs** → pushes to Buffer, updates to `status: scheduled`, moves file to `../../published/`
 
-Do not ask for confirmation — treat "I've scheduled the post" (or similar) as the trigger to execute this automatically.
+The `/publish` workflow handles step 3 automatically. This skill only handles saving drafts (step 1) and marking them approved when the user confirms the final version (step 2).
 
 ## Related Skills
 
