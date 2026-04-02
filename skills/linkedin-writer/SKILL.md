@@ -80,6 +80,15 @@ Write the post following these rules:
 - **Diagnosis OR solution, not both**: A short-form post should either diagnose a problem or present a solution. Trying to do both forces too much explanation into too little space and leaves the reader confused. If the solution requires jargon or new concepts the reader doesn't already know, cut the solution and let the post be the diagnosis. The article or first-comment handles the rest.
 - **No stacked paraphrases**: If two consecutive paragraphs say the same thing in different words ("you become the memory" followed by "you become the integration layer"), cut one. Each paragraph must advance the argument, not restate the previous one.
 
+#### Visual Appeal Rules
+
+Every post must be visually scannable on a mobile feed. A wall of same-length paragraphs kills engagement before the reader reaches the insight.
+
+- **Use emoji-labeled blocks for comparisons or lists**: When presenting 2-3 contrasting options, categories, or steps, format them as emoji-labeled blocks (emoji + bold label on one line, description on the next). This creates visual anchors the eye can grab.
+- **Vary paragraph shape**: Mix single-line statements, 2-sentence paragraphs, and labeled blocks. Monotonous paragraph rhythm makes readers scroll past.
+- **Give key lines their own space**: If a sentence carries the post's main insight or emotional punch, put it on its own line with whitespace above and below. Weight comes from isolation, not emphasis words.
+- **Scan test**: Before finalizing, visually scan the post as a shape. If it looks like a uniform block of text, restructure until it has visible rhythm — short lines, breaks, and visual anchors.
+
 #### Swipe File Rules
 
 - Learn PATTERNS from swipe examples — structure, rhythm, hook style, engagement tactics

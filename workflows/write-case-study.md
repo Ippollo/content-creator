@@ -53,7 +53,13 @@ c:\HQ\content-creator\case-studies\drafts\YYYY-MM-DD-[slug].md
 
 Use full YAML frontmatter per `case-study-writer` skill reference doc.
 
-### 3. Suggest Atomization
+### 3. Publish to Blog
+
+Remind the user to publish the case study to **yourwebsite.com** before or alongside the LinkedIn teaser. The blog is the canonical home for long-form content.
+
+> 📝 **Blog publish reminder**: This case study should be posted to yourwebsite.com. The LinkedIn teaser's first-comment should link to the blog URL.
+
+### 4. Suggest Atomization
 
 After saving, prompt:
 

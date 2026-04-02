@@ -59,8 +59,15 @@ c:\HQ\content-creator\articles\drafts\YYYY-MM-DD-[slug].md
 
 Use full YAML frontmatter per `blog-writer` skill reference doc.
 
-### 4. Suggest Next Steps
+### 4. Publish to Blog
+
+Remind the user to publish the article to **yourwebsite.com** before or alongside the LinkedIn teaser. The blog is the canonical home for long-form content.
+
+> 📝 **Blog publish reminder**: This article should be posted to yourwebsite.com. The LinkedIn teaser's first-comment should link to the blog URL.
+
+### 5. Suggest Next Steps
 
 After saving, suggest:
+- Publish to yourwebsite.com
 - `/atomize [file path]` — break the article into LinkedIn posts
-- `/publish` — when ready to schedule
+- `/publish` — when ready to schedule the LinkedIn teaser
