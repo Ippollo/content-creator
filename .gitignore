@@ -6,3 +6,17 @@ node_modules/
 
 # Binary/third-party files
 *.pdf
+
+# Personal content (share the system, not the output)
+articles/drafts/
+articles/published/
+articles/images/
+linkedin/drafts/
+linkedin/published/
+case-studies/drafts/
+case-studies/published/
+case-studies/sources/
+case-studies/images/
+x/drafts/
+editorial-calendar.md
+LinkedIn 360Brew Deep-Dive Report.md
