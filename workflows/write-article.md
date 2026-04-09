@@ -61,13 +61,13 @@ Use full YAML frontmatter per `blog-writer` skill reference doc.
 
 ### 4. Publish to Blog
 
-Remind the user to publish the article to **yourwebsite.com** before or alongside the LinkedIn teaser. The blog is the canonical home for long-form content.
+Remind the user to publish the article to **their blog/website** before or alongside the LinkedIn teaser. The blog is the canonical home for long-form content.
 
-> 📝 **Blog publish reminder**: This article should be posted to yourwebsite.com. The LinkedIn teaser's first-comment should link to the blog URL.
+> 📝 **Blog publish reminder**: This article should be posted to your website. The LinkedIn teaser's first-comment should link to the blog URL.
 
 ### 5. Suggest Next Steps
 
 After saving, suggest:
-- Publish to yourwebsite.com
+- Publish to your blog/website
 - `/atomize [file path]` — break the article into LinkedIn posts
 - `/publish` — when ready to schedule the LinkedIn teaser

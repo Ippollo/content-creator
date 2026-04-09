@@ -22,3 +22,16 @@ editorial-calendar.md
 LinkedIn 360Brew Deep-Dive Report.md
 voice/voice-guide.md
 strategy/pillars.md
+
+# Site-specific skills (hardcoded to personal website)
+skills/website-copywriter/
+skills/schema-markup/
+skills/seo-audit/
+skills/page-cro/
+skills/site-architecture/
+
+# Personal swipe file examples
+swipe-file/linkedin/[0-9]*.md
+
+# Buffer script (references personal channel IDs)
+scripts/buffer-publish.js
