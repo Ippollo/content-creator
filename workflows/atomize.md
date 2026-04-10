@@ -1,5 +1,5 @@
 ---
-description: Atomize a blog article or case study into LinkedIn posts using content-multiplier → linkedin-writer → content-reviewer pipeline.
+description: Atomize content into LinkedIn posts.
 ---
 
 # /atomize — Content Atomization Workflow

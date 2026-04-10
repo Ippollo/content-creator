@@ -1,5 +1,5 @@
 ---
-description: Batch schedule approved posts to Buffer and update all tracking files.
+description: Batch schedule approved posts to Buffer.
 ---
 
 # /publish — Schedule to Buffer

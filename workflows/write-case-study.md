@@ -1,5 +1,5 @@
 ---
-description: "Write a case study from real project experience — intake, confidentiality check, SCAR outline, draft, review, save, suggest atomization. Use when the user wants to document a project outcome, turn measurable results into credibility content, or build proof-of-work for clients and employers. Not for general thought leadership articles (use /write-article) or LinkedIn posts (use /atomize from a finished case study)."
+description: Write a case study from real project experience.
 ---
 
 # /write-case-study — Case Study Origination

@@ -1,5 +1,5 @@
 ---
-description: "Write an original blog article from scratch — research, outline, draft, review, save. Use when the user wants to create a new long-form article targeting a keyword, expanding on a topic, or turning a vault note into publishable content. Not for case studies (use /write-case-study) or LinkedIn posts (use /atomize from an existing article)."
+description: Write an original blog article from scratch.
 ---
 
 # /write-article — Blog Article Origination
