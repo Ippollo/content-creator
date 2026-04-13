@@ -29,6 +29,15 @@ It does **not** optimize for raw engagement volume. It optimizes for depth, rele
 5. **Profile visits / connection requests** — Proxy for real professional value.
 6. **Likes / reactions** — Still counted but downgraded relative to everything above.
 
+### Reach vs. Engagement Intent
+
+High impressions and high engagement are driven by different levers. Analytics show weak correlation between the two.
+
+- **Reach posts** (optimize for impressions): Need a pattern-interrupt hook in the first line — bold claim, surprising number, or contradiction. These get algorithmic distribution but lower engagement rates (0.2–0.5%).
+- **Engagement posts** (optimize for reactions/comments): Need emotional stakes and personal vulnerability. "Here's what happened to me" posts drive 2–4× higher engagement rates but lower total impressions.
+
+Decide the intent **before drafting**. Trying to optimize for both in the same post dilutes both signals.
+
 ### Post Longevity
 
 - Posts can resurface over several days (not just 24h) if comments remain active, saves are strong, and the topic stays timely.

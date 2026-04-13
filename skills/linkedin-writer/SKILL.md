@@ -59,6 +59,15 @@ For each swipe example, identify:
 
 Write the post following these rules:
 
+#### Intent Decision (before drafting)
+
+Before writing, decide whether this post is a **reach play** or an **engagement play**:
+
+- **Reach**: Use a pattern-interrupt hook (bold claim, surprising number, contradiction). Expect high impressions, lower engagement rate.
+- **Engagement**: Use personal vulnerability or relatable confession. Expect higher engagement rate, lower total impressions.
+
+This decision affects hook style, CTA design, and tone. Don't try to optimize for both in the same post.
+
 #### Voice Rules
 
 - Match the user's natural sentence patterns, vocabulary, and tone from the voice profile
@@ -79,6 +88,8 @@ Write the post following these rules:
 - **Cascading lists**: When writing bullet/emoji lists, order items so each line is progressively shorter or longer than the previous. This creates a visual slope (funnel or ramp) that pulls the reader's eye down the page. **Logical and narrative order always takes priority.** If items must appear in a specific sequence, rewrite the items themselves (tighten or expand wording) to achieve the cascade rather than forcing a reorder that breaks the flow.
 - **Diagnosis OR solution, not both**: A short-form post should either diagnose a problem or present a solution. Trying to do both forces too much explanation into too little space and leaves the reader confused. If the solution requires jargon or new concepts the reader doesn't already know, cut the solution and let the post be the diagnosis. The article or first-comment handles the rest.
 - **No stacked paraphrases**: If two consecutive paragraphs say the same thing in different words ("you become the memory" followed by "you become the integration layer"), cut one. Each paragraph must advance the argument, not restate the previous one.
+- **Concrete anchor required**: Every post must include at least one specific number, named tool, timeline, or dollar amount. If you can't find one, the post isn't specific enough yet. Analytics show every top-10 post by impressions includes a concrete anchor ("47 employees", "2 hours a day", "$1500", "December 24th").
+- **Case study hooks need transformation, not setup**: Don't open a case study with a situation description ("I took over a chaotic process"). Lead with the transformation delta ("The team had been shipping late for 6 months. After 3 weeks, we cut delivery time by 60%"). Setup-first hooks underperform transformation-first hooks by 3–8× on impressions.
 
 #### Visual Appeal Rules
 
