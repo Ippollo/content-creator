@@ -13,6 +13,7 @@ Orchestrates the full case study pipeline: intake → confidentiality → SCAR o
 - **Treating one engagement as multiple case studies** — each case study is one transformation story. If the user describes three separate problems they solved, that's three case studies. Flag it and confirm scope before starting.
 - **Dumping all intake questions at once** — overwhelming the user with a 12-question intake form kills momentum. Ask in three conversational rounds: context → action → results. If raw notes are provided, extract answers first and only ask about confirmed gaps.
 - **Letting the user be the hero** — case studies are about the outcome, not the operator. Every section should be answerable by the reader asking "so what?" If a passage can't pass that test, cut it.
+- **Skipping the research pull** — if a `notebook_id` is available, the research step is mandatory, not optional. Case studies require structured research to pull necessary context.
 
 ## Prerequisites
 
@@ -32,7 +33,18 @@ The user provides a project to write about. Examples:
 
 ## Steps
 
-### 1. Invoke `case-study-writer`
+### 1. Intake Check (if needed)
+
+If the user provides a vault note or raw project notes as source material, read it and extract the core project contours (Context, Action, Results) before proceeding.
+
+### 1.5. Research Pull
+
+If the source project note contains a `notebook_id` field:
+1. Query NotebookLM with 2–3 targeted questions derived from the context.
+2. Save the query results as a research brief in the conversation scratch directory.
+3. Pass that brief as context to the `case-study-writer` skill during the next step.
+
+### 2. Invoke `case-study-writer`
 
 Follow the `case-study-writer` skill workflow end to end:
 
@@ -40,10 +52,10 @@ Follow the `case-study-writer` skill workflow end to end:
 2. **Confidentiality check** — flag any client names, revenue figures, or proprietary data. Present anonymization plan and get approval before proceeding.
 3. **Outline (SCAR)** — present Situation → Challenge → Action → Result → Takeaway for user approval
 4. **Draft** — write the full case study (1,500–2,500 words)
-5. **Self-Review** — run through `content-reviewer` (Evidence, Narrative, Credibility rubrics; quality bar: 9/10; max 3 passes)
+5. **Self-Review** — run through `content-reviewer` (Evidence, Narrative, Credibility rubrics; quality bar: 9/10; max 3 passes). **Self-review is not optional.** The `content-reviewer` protocol must be executed with actual scoring. Claiming a score without running the rubrics is a workflow violation.
 6. **Present** — show final case study with score and review notes
 
-### 2. Save
+### 3. Save
 
 On user approval, save to:
 
@@ -53,13 +65,13 @@ c:\HQ\content-creator\case-studies\drafts\YYYY-MM-DD-[slug].md
 
 Use full YAML frontmatter per `case-study-writer` skill reference doc.
 
-### 3. Publish to Blog
+### 4. Publish to Blog
 
 Remind the user to publish the case study to **their blog/website** before or alongside the LinkedIn teaser. The blog is the canonical home for long-form content.
 
 > 📝 **Blog publish reminder**: This case study should be posted to your website. The LinkedIn teaser's first-comment should link to the blog URL.
 
-### 4. Suggest Atomization
+### 5. Suggest Atomization
 
 After saving, prompt:
 

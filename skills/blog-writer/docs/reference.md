@@ -24,6 +24,7 @@ Most personal branding articles are **informational** or **commercial**. Transac
 | **Framework / Model** | Original or adapted framework | Thought leadership, shareability |
 | **Case Study** | Behind-the-scenes of a project or result | Credibility, consulting leads |
 | **Comparison** | A vs B analysis with recommendation | Search traffic, decision-making value |
+| **The Reframe** | Challenges a common assumption by presenting familiar expertise through a new lens | Positioning, career narrative, contrarian thought leadership |
 | **Lessons Learned** | Personal experience distilled into principles | Authenticity, career narrative |
 | **Trend Analysis** | Industry trend with expert interpretation | Timeliness, positioning |
 | **Anti-Patterns** | What NOT to do and why | Contrarian angle, engagement |

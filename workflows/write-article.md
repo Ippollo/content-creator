@@ -12,6 +12,8 @@ Orchestrates the full origination pipeline for a new blog article: topic → res
 - **Writing from memory** — always read the voice profile and 2–3 swipe file examples before drafting. Tone drift is invisible until it's already in the draft.
 - **Treating a case study as a blog article** — real project outcomes with before/after metrics belong in `/write-case-study`. Blog articles are thought leadership, not proof-of-work.
 - **Asking too many questions upfront** — one focused clarifying question max. The keyword and angle can emerge through the outline proposal; don't interrogate the user before seeing their reaction to an option.
+- **Skipping the research pull** — if a `notebook_id` is available, the research step is mandatory, not optional. Drafting from memory when structured research exists is the fastest way to produce a thin article.
+- **Overwriting a draft without committing first** — if a draft file already exists (from a prior run or model), commit it before overwriting. Drafts are destroyed during model handoffs if they aren't saved to git. The two-model workflow (Pro drafts, Opus polishes) depends on the draft surviving the transition.
 
 ## Prerequisites
 
@@ -39,6 +41,13 @@ If the topic is ambiguous, ask **one** focused question. Don't barrage the user 
 
 If the user provides a vault note as source material, read it and extract the core thesis before proceeding.
 
+### 1.5. Research Pull
+
+If the source project note contains a `notebook_id` field:
+1. Query NotebookLM with 2–3 targeted questions derived from the outline.
+2. Save the query results as a research brief in the conversation scratch directory.
+3. Pass that brief as context to the `blog-writer` skill during the next step.
+
 ### 2. Invoke `blog-writer`
 
 Follow the `blog-writer` skill workflow end to end:
@@ -46,8 +55,9 @@ Follow the `blog-writer` skill workflow end to end:
 1. **Research and Angle** — identify search intent, target keyword, reader outcome, archetype
 2. **Outline** — present H2 skeleton for user approval before drafting
 3. **Draft** — write the full article (1,500–2,500 words)
-4. **Self-Review** — run through `content-reviewer` (Voice, Structure, SEO rubrics; quality bar: 9/10; max 3 passes)
-5. **Present** — show final article with score and review notes
+4. **Save draft to disk immediately.** Write the draft to `c:\HQ\content-creator\articles\drafts\YYYY-MM-DD-[slug].md` before running the self-review. This ensures the draft survives model switches, conversation timeouts, or review-pass failures. If the user plans a two-model workflow (e.g., Pro drafts, Opus polishes), this is the handoff point.
+5. **Self-Review** — run through `content-reviewer` (Voice, Structure, SEO rubrics; quality bar: 9/10; max 3 passes). **Self-review is not optional.** The `content-reviewer` protocol must be executed with actual scoring. Claiming a score without running the rubrics is a workflow violation.
+6. **Present** — show final article with score and review notes
 
 ### 3. Save
 

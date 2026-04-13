@@ -24,6 +24,8 @@
 | 2026-03-26 | delegation-dependency                   | Ops & CX      | linkedin   |
 | 2026-03-30 | pick-two-platforms                      | Revenue & Biz | linkedin   |
 | 2026-03-31 | chaos-audit                             | Ops & CX      | linkedin   |
+| 2026-04-13 | ai-memory-architecture              | AI Agents     | article    |
+| 2026-04-13 | ai-memory-architecture (teaser)     | AI Agents     | linkedin   |
 
 ---
 
@@ -73,6 +75,7 @@
 ### Notes
 
 - Mon: article published to strategicoperator.ca.
+- Mon: LinkedIn teaser published.
 - Tue: atom from enterprise-ai-strategy (1-week echo).
 - Wed: internal-communication scheduled in Buffer (replaces clients-canceling-during-onboarding, which is held with onboarding case study).
 
