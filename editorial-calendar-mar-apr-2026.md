@@ -105,20 +105,43 @@
 
 ## Week of 2026-04-27 — reimagining-employee-onboarding
 
-| Day | Post                                   | Pillar        | Type       | Status       |
-| --- | -------------------------------------- | ------------- | ---------- | ------------ |
-| Mon | reimagining-employee-onboarding        | Ops & CX      | case study | scheduled    |
-| Tue | onboarding-checklist-analogy           | AI Agents     | linkedin   | draft        |
-| Wed | ensure-consistency-not-quality-control | Ops & CX      | linkedin   | draft        |
-| Thu | strategic-operator                     | Revenue & Biz | linkedin   | draft        |
-| Fri | your-agent-forgets                     | AI Agents     | linkedin   | draft        |
+| Day | Post                            | Pillar        | Type       | Status    |
+| --- | ------------------------------- | ------------- | ---------- | --------- |
+| Mon | reimagining-employee-onboarding | Ops & CX      | case study | scheduled |
+| Tue | onboarding-checklist-analogy    | AI Agents     | linkedin   | draft     |
+| Wed | saas-delivery-risk              | Ops & CX      | linkedin   | draft     |
+| Thu | strategic-operator              | Revenue & Biz | linkedin   | draft     |
+| Fri | your-agent-forgets              | AI Agents     | linkedin   | draft     |
 
 ### Notes
 
 - Mon: "How We Cut Employee Onboarding Labor by a Third" case study scheduled in Buffer for Apr 27.
 - Tue, Fri: atoms from harness-engineering (2-week echo, final atoms).
+- Wed: atom from saas-vs-msp (1-week echo).
 
 ### Pillar Balance: Ops 2, AI 2, Rev 1
+
+---
+
+## Week of 2026-05-04 — onboarding-that-actually-works
+
+| Day | Post                                  | Pillar        | Type       | Status    |
+| --- | ------------------------------------- | ------------- | ---------- | --------- |
+| Mon | onboarding-that-actually-works        | Ops & CX      | case study | scheduled |
+| Tue | ensure-consistency-not-quality-control | AI Agents     | linkedin   | draft     |
+| Wed | onboarding-trainer-cost               | Ops & CX      | linkedin   | draft     |
+| Thu | human-in-the-loop-signal              | AI Agents     | linkedin   | approved  |
+| Fri | job-redesign-lag                      | Career        | linkedin   | draft     |
+
+### Notes
+
+- Mon: "Onboarding That Actually Works" case study publishes to strategicoperator.ca.
+- Tue: atom from ai-marketing-toolkit (multi-week echo).
+- Wed: atom from reimagining-employee-onboarding (1-week echo).
+- Thu: standalone observation on AI ops hiring trends.
+- Fri: atom from enterprise-ai-strategy (multi-week echo).
+
+### Pillar Balance: Ops 2, AI 2, Career 1
 
 ---
 
@@ -131,7 +154,7 @@
 | enterprise-ai-strategy              | AI Agents | published | 2026-04-06   |
 | ai-memory-architecture              | AI Agents | published | 2026-04-13   |
 | harness-engineering-operators-guide | AI Agents | published | 2026-04-20   |
-| saas-vs-msp                         | Ops & CX  | not started | TBD         |
+| saas-vs-msp                         | Ops & CX  | published   | 2026-04-16  |
 
 ### Case Studies
 
