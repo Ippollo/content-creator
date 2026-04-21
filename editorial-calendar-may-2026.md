@@ -1,7 +1,7 @@
 # Editorial Calendar — May 2026
 
 > Initialized: 2026-04-10
-> Strategy: 5 posts/week (Mon-Fri) · Mon = long-form (article or case study → blog + LinkedIn teaser) · Tue-Fri = LinkedIn posts · No 2+ same-pillar in a row
+> Strategy: 5 shortform posts/week (Mon-Fri) · No LinkedIn article publishing — link to strategicoperator.ca in first comments instead · No 2+ same-pillar in a row
 > Previous: [March/April 2026](editorial-calendar-mar-apr-2026.md)
 
 ---
@@ -21,8 +21,9 @@
 | ai-transformation-hire         | AI Agents     | opinion                                     |
 | job-redesign-lag               | AI Agents     | atom from enterprise-ai-strategy             |
 | agentic-ai-guardrails          | AI Agents     | atom from enterprise-ai-strategy             |
+| agentic-ai-separated-concern   | AI Agents     | standalone draft — Separated Concern pattern |
 | human-in-the-loop-signal       | AI Agents     | standalone draft                            |
-| strategic-operator             | Revenue & Biz | draft — if not used in Apr 27 week          |
+| strategic-operator             | Revenue & Biz | approved — staying on Apr 30 (Mar/Apr calendar) |
 
 **Count by pillar**: Ops & CX 4, AI Agents 6, Revenue & Biz 1
 
@@ -42,9 +43,9 @@
 
 | Content                                 | Pillar        | Type       | Status            | Target Date     |
 | --------------------------------------- | ------------- | ---------- | ----------------- | --------------- |
-| reimagining-employee-onboarding         | Ops & CX      | case study | scheduled         | Apr 27 (Buffer) |
-| onboarding-that-actually-works          | Ops & CX      | case study | scheduled         | May 4 (Buffer)  |
-| saas-vs-msp                             | Ops & CX      | article    | not started       | TBD             |
+| reimagining-employee-onboarding         | Ops & CX      | case study | scheduled         | Apr 27 (LinkedIn) |
+| onboarding-that-actually-works          | Ops & CX      | case study | unscheduled       | —               |
+| saas-customer-retention-managed-services | Ops & CX     | article    | published         | strategicoperator.ca/articles/saas-customer-retention-managed-services |
 | automating-client-followups-procurement | AI Agents     | case study | draft-needs-input | TBD             |
 
 ---
@@ -59,24 +60,24 @@ Per `strategy/pillars.md`, the following quotas apply:
 
 ---
 
-## Week of 2026-05-04 — onboarding-that-actually-works
+## Week of 2026-05-04
 
 | Day | Post                                | Pillar        | Type       | Status    |
 | --- | ----------------------------------- | ------------- | ---------- | --------- |
-| Mon | onboarding-that-actually-works      | Ops & CX      | case study | scheduled |
-| Tue | clients-canceling-during-onboarding | Ops & CX      | linkedin   | draft     |
-| Wed | agentic-ai-guardrails               | AI Agents     | linkedin   | draft     |
-| Thu | speed-to-value-over-perfection      | Ops & CX      | linkedin   | draft     |
-| Fri | ai-powered-pkm                      | AI Agents     | linkedin   | draft     |
+| Mon | qbr-sales-costume                   | Revenue & Biz | linkedin   | scheduled |
+| Tue | clients-canceling-during-onboarding | Ops & CX      | linkedin   | scheduled |
+| Wed | agentic-ai-guardrails               | AI Agents     | linkedin   | scheduled |
+| Thu | speed-to-value-over-perfection      | Ops & CX      | linkedin   | approved  |
+| Fri | ai-powered-pkm                      | AI Agents     | linkedin   | approved  |
 
 ### Notes
 
-- Mon: "Onboarding That Actually Works" case study scheduled in Buffer for May 4 at 8:00 AM.
+- Mon: qbr-sales-costume (Revenue & Biz) — atom from saas-customer-retention article.
 - Tue, Thu: onboarding case study atoms (now unlocked).
 - Wed: final enterprise-ai-strategy atom (3-week echo).
 - **Narrative slot**: Fri (ai-powered-pkm) can be written as a personal narrative about building the PKM system.
 
-### Pillar Balance: Ops 3, AI 2 ⚠️ (Ops-heavy — swap Thu for a Rev & Biz post if needed)
+### Pillar Balance: Ops 2, AI 2, Rev 1 ✓
 
 ---
 
@@ -84,16 +85,16 @@ Per `strategy/pillars.md`, the following quotas apply:
 
 | Day | Post                           | Pillar        | Type     | Status |
 | --- | ------------------------------ | ------------- | -------- | ------ |
-| Mon | _[long-form TBD]_             | —             | article  | —      |
+| Mon | human-in-the-loop-signal       | AI Agents     | linkedin | draft  |
 | Tue | three-meetings-a-day           | Ops & CX      | linkedin | draft  |
 | Wed | prompts-vs-systems-compounding | AI Agents     | linkedin | draft  |
-| Thu | strategic-operator             | Revenue & Biz | linkedin | draft  |
+| Thu | _[TBD — Revenue & Biz needed]_ | Revenue & Biz | linkedin | needed |
 | Fri | blocking-time-selfish          | Ops & CX      | linkedin | draft  |
 
 ### Notes
 
-- Mon: No article confirmed yet. Options: expand a strong LinkedIn post into an article, or publish automating-client-followups if Chris provides the 6 missing answers.
-- Thu: Revenue & Biz pillar rebalancing.
+- Mon: human-in-the-loop-signal (AI Agents).
+- Thu: Revenue & Biz slot open — strategic-operator moved to May 4. Need a new Rev & Biz draft.
 - **Vulnerability slot**: Tue (three-meetings-a-day) can be rewritten with a personal confession hook per mix rules.
 
 ### Pillar Balance: Ops 2, AI 1, Rev 1 + TBD Monday
@@ -104,7 +105,7 @@ Per `strategy/pillars.md`, the following quotas apply:
 
 | Day | Post                    | Pillar        | Type     | Status |
 | --- | ----------------------- | ------------- | -------- | ------ |
-| Mon | _[long-form TBD]_      | —             | article  | —      |
+| Mon | _[shortform TBD]_      | —             | linkedin | needed |
 | Tue | human-in-the-loop-signal | AI Agents    | linkedin | draft  |
 | Wed | stop-scheduling-meetings | Ops & CX     | linkedin | draft  |
 | Thu | ai-transformation-hire  | AI Agents     | linkedin | draft  |
@@ -123,7 +124,7 @@ Per `strategy/pillars.md`, the following quotas apply:
 
 | Day | Post              | Pillar    | Type     | Status |
 | --- | ----------------- | --------- | -------- | ------ |
-| Mon | _[long-form TBD]_ | —        | article  | —      |
+| Mon | _[shortform TBD]_ | —        | linkedin | needed |
 | Tue | job-redesign-lag  | AI Agents | linkedin | draft  |
 | Wed | firefight-mode    | Ops & CX  | linkedin | draft  |
 | Thu | _[new — Rev & Biz]_ | Revenue & Biz | linkedin | needed |

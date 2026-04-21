@@ -108,10 +108,10 @@
 | Day | Post                            | Pillar        | Type       | Status    |
 | --- | ------------------------------- | ------------- | ---------- | --------- |
 | Mon | reimagining-employee-onboarding | Ops & CX      | case study | scheduled |
-| Tue | onboarding-checklist-analogy    | AI Agents     | linkedin   | draft     |
-| Wed | saas-delivery-risk              | Ops & CX      | linkedin   | draft     |
-| Thu | strategic-operator              | Revenue & Biz | linkedin   | draft     |
-| Fri | your-agent-forgets              | AI Agents     | linkedin   | draft     |
+| Tue | onboarding-checklist-analogy    | AI Agents     | linkedin   | scheduled |
+| Wed | saas-delivery-risk              | Ops & CX      | linkedin   | scheduled |
+| Thu | strategic-operator              | Revenue & Biz | linkedin   | scheduled |
+| Fri | your-agent-forgets              | AI Agents     | linkedin   | scheduled |
 
 ### Notes
 
@@ -120,28 +120,6 @@
 - Wed: atom from saas-vs-msp (1-week echo).
 
 ### Pillar Balance: Ops 2, AI 2, Rev 1
-
----
-
-## Week of 2026-05-04 — onboarding-that-actually-works
-
-| Day | Post                                  | Pillar        | Type       | Status    |
-| --- | ------------------------------------- | ------------- | ---------- | --------- |
-| Mon | onboarding-that-actually-works        | Ops & CX      | case study | scheduled |
-| Tue | ensure-consistency-not-quality-control | AI Agents     | linkedin   | draft     |
-| Wed | onboarding-trainer-cost               | Ops & CX      | linkedin   | draft     |
-| Thu | human-in-the-loop-signal              | AI Agents     | linkedin   | approved  |
-| Fri | job-redesign-lag                      | Career        | linkedin   | draft     |
-
-### Notes
-
-- Mon: "Onboarding That Actually Works" case study publishes to strategicoperator.ca.
-- Tue: atom from ai-marketing-toolkit (multi-week echo).
-- Wed: atom from reimagining-employee-onboarding (1-week echo).
-- Thu: standalone observation on AI ops hiring trends.
-- Fri: atom from enterprise-ai-strategy (multi-week echo).
-
-### Pillar Balance: Ops 2, AI 2, Career 1
 
 ---
 
