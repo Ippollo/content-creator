@@ -67,8 +67,8 @@ Per `strategy/pillars.md`, the following quotas apply:
 | Mon | qbr-sales-costume                   | Revenue & Biz | linkedin   | scheduled |
 | Tue | clients-canceling-during-onboarding | Ops & CX      | linkedin   | scheduled |
 | Wed | agentic-ai-guardrails               | AI Agents     | linkedin   | scheduled |
-| Thu | speed-to-value-over-perfection      | Ops & CX      | linkedin   | approved  |
-| Fri | ai-powered-pkm                      | AI Agents     | linkedin   | approved  |
+| Thu | ai-powered-pkm                      | AI Agents     | linkedin   | scheduled |
+| Fri | human-in-the-loop-signal            | AI Agents     | linkedin   | scheduled |
 
 ### Notes
 
@@ -85,7 +85,7 @@ Per `strategy/pillars.md`, the following quotas apply:
 
 | Day | Post                           | Pillar        | Type     | Status |
 | --- | ------------------------------ | ------------- | -------- | ------ |
-| Mon | human-in-the-loop-signal       | AI Agents     | linkedin | draft  |
+| Mon | speed-to-value-over-perfection  | Ops & CX      | linkedin | scheduled |
 | Tue | three-meetings-a-day           | Ops & CX      | linkedin | draft  |
 | Wed | prompts-vs-systems-compounding | AI Agents     | linkedin | draft  |
 | Thu | _[TBD — Revenue & Biz needed]_ | Revenue & Biz | linkedin | needed |
