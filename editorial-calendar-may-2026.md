@@ -86,10 +86,10 @@ Per `strategy/pillars.md`, the following quotas apply:
 | Day | Post                           | Pillar        | Type     | Status |
 | --- | ------------------------------ | ------------- | -------- | ------ |
 | Mon | speed-to-value-over-perfection  | Ops & CX      | linkedin | scheduled |
-| Tue | three-meetings-a-day           | Ops & CX      | linkedin | draft  |
-| Wed | prompts-vs-systems-compounding | AI Agents     | linkedin | draft  |
-| Thu | _[TBD — Revenue & Biz needed]_ | Revenue & Biz | linkedin | needed |
-| Fri | blocking-time-selfish          | Ops & CX      | linkedin | draft  |
+| Tue | prompts-vs-systems-compounding | AI Agents     | linkedin | scheduled |
+| Wed | three-meetings-a-day           | Ops & CX      | linkedin | scheduled |
+| Thu | evidence-gap                   | Career Strategy | linkedin | scheduled |
+| Fri | blocking-time-selfish          | Ops & CX      | linkedin | scheduled |
 
 ### Notes
 
@@ -105,7 +105,7 @@ Per `strategy/pillars.md`, the following quotas apply:
 
 | Day | Post                    | Pillar        | Type     | Status |
 | --- | ----------------------- | ------------- | -------- | ------ |
-| Mon | _[shortform TBD]_      | —             | linkedin | needed |
+| Mon | ticket-metric-churn     | Revenue & Biz | linkedin | scheduled |
 | Tue | human-in-the-loop-signal | AI Agents    | linkedin | draft  |
 | Wed | stop-scheduling-meetings | Ops & CX     | linkedin | draft  |
 | Thu | ai-transformation-hire  | AI Agents     | linkedin | draft  |

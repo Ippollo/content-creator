@@ -22,6 +22,9 @@ These are the most common mistakes when writing LinkedIn posts. Violating any of
 - **Corporate-speak or AI tells**: Phrases like "In today's fast-paced world" or "It's important to note" signal AI and break trust.
 - **Burying the hook**: If the reader has to scroll to understand what the post is about, you've lost them.
 - **Unverified stats**: If you include a number or statistic, it must be attributable to a named source (e.g., "Microsoft's 2025 Work Trend Index"). If you can't find a credible source, rewrite the line without the number. Impressive-sounding stats that aren't real destroy trust instantly.
+- **ugcPost reshares**: Never draft a post that reshares someone else's LinkedIn post with commentary. Always write original content. If referencing someone else's idea, write a standalone post and credit them in-line.
+- **Standalone third-party story hooks**: Never draft a post that tells someone else's story without layering personal experience or a specific framework on top. Posts about other people's stories without personal experience get reach but near-zero engagement (0.1–0.2% rate) — empty calories.
+- **Pure AI-trend commentary**: Never draft a post that simply reacts to AI news without personal experience. "Microsoft launched X" is only valid when paired with "here's what I built/tested/observed with it."
 
 ---
 
@@ -151,12 +154,16 @@ Output the final post in this format:
 
 **Archetype**: [type]
 **Cluster**: [topic pillar]
+**Intent**: [Reach | Engagement | Both] — *[1-line rationale for the choice]*
 **Score**: [X/10] (Voice: X | Structure: X | Algo: X)
 
 ---
 
 [Full post content here]
 ```
+
+> [!NOTE]
+> "Both" intent is only valid for personal narratives and vulnerability posts — the only archetype where analytics show high reach AND high engagement. For all other posts, you must pick one. If you can't decide, default to Engagement — it's harder to manufacture and more valuable to the algorithm.
 
 Below the post, include:
 

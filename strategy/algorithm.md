@@ -52,6 +52,27 @@ Decide the intent **before drafting**. Trying to optimize for both in the same p
 - **Off-topic content** — Posts mismatched with your profile's niche weaken topical authority and make distribution erratic.
 - **Link-drops** — Short posts that are just a link + tagline underperform. Wrap links in a value-dense summary.
 
+## Banned Formats (data-backed, May 2026)
+
+These formats are permanently banned based on 12 months of analytics showing consistent underperformance. Reviewed monthly — next review: June 11–15, 2026.
+
+### ugcPost Reshares
+Resharing another person's post with your commentary. Every ugcPost in the dataset landed below 300 impressions. The algorithm deprioritizes reshared content vs. original content.
+
+**Instead**: If you find something worth sharing, write an original post that references the idea and add your own experience. Link to the original in a first-comment if needed.
+
+### Standalone Third-Party Story Hooks
+Posts about other people's stories without tying them to your personal experience or a specific framework.
+
+These get reach (1,000–1,400 impressions) but near-zero engagement (0.1–0.2% rate). They train the algorithm to distribute your content to people who don't interact, which suppresses future reach over time.
+
+**Instead**: Only tell someone else's story if you were involved, witnessed it firsthand, or can layer a framework from your own experience on top of it.
+
+### Pure AI-Trend Commentary
+Reacting to AI news without personal experience attached. These consistently land below 250 impressions.
+
+**Instead**: Anchor AI commentary in something you built, tested, or observed firsthand. "Microsoft launched Copilot Cowork" works when paired with "here's what I tested" — not as a standalone news reaction.
+
 ## Format Guidelines
 
 | Format             | When it works                                                     | When it doesn't                                   |

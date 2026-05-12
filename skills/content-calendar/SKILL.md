@@ -31,11 +31,18 @@ Before using this skill, read:
 
 These come from `pillars.md` and must be enforced:
 
-- **Cadence**: 5 LinkedIn posts/week (Mon-Fri, no weekends). Analytics show sustained 5-day cadence produces compounding returns.
-- **Content mix**: At least 1 personal narrative per week, 1 vulnerability/confession post per month.
+- **Cadence**: 5 LinkedIn posts/week (Mon-Fri, no weekends). Sustained cadence produces compounding returns. Do not drop below this.
+- **Content mix**:
+  - At least 1 personal narrative per week (reach + engagement)
+  - At least 1 light vulnerability per week ("here's what I learned / what broke") (engagement floor)
+  - At least 1 deep vulnerability per month (follower conversion)
+  - 0 ugcPost reshares — reject and convert to original content
+  - 0 standalone third-party story hooks — reject unless personal experience is layered
 - **Pillar mix**: ~80% Pillars 1-3 (AI Agents, Ops & CX, Revenue & Biz), ~20% Pillar 4 (Career)
+- **Revenue & Biz framing**: Every Revenue & Biz post must include at least one operational detail. Reject pure business-metrics posts.
 - **Theme diversity**: No more than 2 posts from the same pillar in a row
-- **Posting days**: Mon-Fri. Mon = long-form (article or case study teaser).
+- **Posting days**: Mon-Fri. All days are shortform posts unless a long-form article is explicitly ready.
+- **Engagement rate monitor**: If engagement rate drops below 0.4% for 2 consecutive weeks, flag it and schedule a framework or vulnerability post for the next available slot. Tracked during monthly analytics review (next: June 11–15, 2026).
 
 ---
 

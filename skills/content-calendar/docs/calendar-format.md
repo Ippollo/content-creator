@@ -9,12 +9,13 @@ The editorial calendar lives at `c:\HQ\content-creator\editorial-calendar.md`.
 
 ## Week of YYYY-MM-DD
 
-| Day | Post | Pillar | Status |
-|-----|------|--------|--------|
-| Mon | slug | Pillar Name | draft / approved / scheduled |
-| Tue | slug | Pillar Name | draft / approved / scheduled |
-| Thu | slug | Pillar Name | draft / approved / scheduled |
-| Fri | slug | Pillar Name | draft / approved / scheduled |
+| Day | Post | Pillar | Type | Status |
+|-----|------|--------|------|--------|
+| Mon | slug | Pillar Name | linkedin | draft / approved / scheduled |
+| Tue | slug | Pillar Name | linkedin | draft / approved / scheduled |
+| Wed | slug | Pillar Name | linkedin | draft / approved / scheduled |
+| Thu | slug | Pillar Name | linkedin | draft / approved / scheduled |
+| Fri | slug | Pillar Name | linkedin | draft / approved / scheduled |
 
 ## Backlog
 
