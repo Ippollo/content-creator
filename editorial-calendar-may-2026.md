@@ -1,160 +1,171 @@
 # Editorial Calendar — May 2026
 
 > Initialized: 2026-04-10
+> Last audited: 2026-05-15
 > Strategy: 5 shortform posts/week (Mon-Fri) · No LinkedIn article publishing — link to strategicoperator.ca in first comments instead · No 2+ same-pillar in a row
 > Previous: [March/April 2026](editorial-calendar-mar-apr-2026.md)
 
 ---
 
-## Carried Forward from April
+## Content Mix Rules (from strategy/pillars.md)
 
-### Remaining Draft Backlog
-
-| Post                           | Pillar        | Notes                                       |
-| ------------------------------ | ------------- | ------------------------------------------- |
-| blocking-time-selfish          | Ops & CX      | reframe                                     |
-| firefight-mode                 | Ops & CX      | system-insight (overlaps tyranny-of-urgent) |
-| stop-scheduling-meetings       | Ops & CX      | system-insight                              |
-| systems-real-test              | Ops & CX      | proof-of-work                               |
-| prompts-vs-systems-compounding | AI Agents     | moved from Apr 20 — available now            |
-| ai-powered-pkm                 | AI Agents     | proof-of-work archetype                     |
-| ai-transformation-hire         | AI Agents     | opinion                                     |
-| job-redesign-lag               | AI Agents     | atom from enterprise-ai-strategy             |
-| agentic-ai-guardrails          | AI Agents     | atom from enterprise-ai-strategy             |
-| agentic-ai-separated-concern   | AI Agents     | standalone draft — Separated Concern pattern |
-| human-in-the-loop-signal       | AI Agents     | standalone draft                            |
-| strategic-operator             | Revenue & Biz | approved — staying on Apr 30 (Mar/Apr calendar) |
-
-**Count by pillar**: Ops & CX 4, AI Agents 6, Revenue & Biz 1
-
-### Onboarding Case Study Atoms (unlocked)
-
-| Post                                | Pillar   | Notes                           |
-| ----------------------------------- | -------- | ------------------------------- |
-| clients-canceling-during-onboarding | Ops & CX | atom from onboarding case study |
-| speed-to-value-over-perfection      | Ops & CX | atom from onboarding case study |
-| three-meetings-a-day                | Ops & CX | atom from onboarding case study |
-| onboarding-checklist-analogy        | AI Agents | atom from harness-engineering   |
-| onboarding-week-one-wrong           | Ops & CX | atom from onboarding case study |
-| onboarding-trainer-cost             | Ops & CX | atom from onboarding case study |
-| onboarding-two-questions            | Ops & CX | atom from onboarding case study |
-
-### Long-Form Pipeline
-
-| Content                                 | Pillar        | Type       | Status            | Target Date     |
-| --------------------------------------- | ------------- | ---------- | ----------------- | --------------- |
-| reimagining-employee-onboarding         | Ops & CX      | case study | scheduled         | Apr 27 (LinkedIn) |
-| onboarding-that-actually-works          | Ops & CX      | case study | unscheduled       | —               |
-| saas-customer-retention-managed-services | Ops & CX     | article    | published         | strategicoperator.ca/articles/saas-customer-retention-managed-services |
-| automating-client-followups-procurement | AI Agents     | case study | draft-needs-input | TBD             |
+- **5 posts/week cadence** — compounding returns confirmed. Do not drop below this.
+- **1 personal narrative per week** — top performers for reach AND engagement. Structure: *Setup → Evidence → Reframe → Reader takeaway.*
+- **1 light vulnerability per week** — keeps engagement rate healthy as reach grows.
+- **1 deep vulnerability per month** — full confession or identity shift. Schedule deliberately. Drives 5× follower conversion.
+- **No ugcPost reshares** — always convert to original content.
+- **No standalone third-party story hooks** — only tell someone else's story if you were involved.
+- **Revenue & Biz posts framed through operations** — audience engages with "how it works," not "what to optimize."
+- **No 2+ same-pillar in a row**
+- **Niche balance**: Pillars 1–3 in-niche (~80%), Pillar 4 personal brand (~20%)
 
 ---
 
-## Content Mix Rules (from analytics)
+## Week of 2026-05-04 ✅ PUBLISHED
 
-Per `strategy/pillars.md`, the following quotas apply:
-
-- **1 personal narrative per week** — identity-level stories are the top performers for reach
-- **1 vulnerability/confession post per month** — drives follower conversion at 5× normal rate
-- **5 posts/week cadence** — compounding returns are measurable; don't drop below this
-
----
-
-## Week of 2026-05-04
-
-| Day | Post                                | Pillar        | Type       | Status    |
-| --- | ----------------------------------- | ------------- | ---------- | --------- |
-| Mon | qbr-sales-costume                   | Revenue & Biz | linkedin   | scheduled |
-| Tue | clients-canceling-during-onboarding | Ops & CX      | linkedin   | scheduled |
-| Wed | agentic-ai-guardrails               | AI Agents     | linkedin   | scheduled |
-| Thu | ai-powered-pkm                      | AI Agents     | linkedin   | scheduled |
-| Fri | human-in-the-loop-signal            | AI Agents     | linkedin   | scheduled |
-
-### Notes
-
-- Mon: qbr-sales-costume (Revenue & Biz) — atom from saas-customer-retention article.
-- Tue, Thu: onboarding case study atoms (now unlocked).
-- Wed: final enterprise-ai-strategy atom (3-week echo).
-- **Narrative slot**: Fri (ai-powered-pkm) can be written as a personal narrative about building the PKM system.
-
-### Pillar Balance: Ops 2, AI 2, Rev 1 ✓
+| Day | Post                                | Pillar        | Status    |
+| --- | ----------------------------------- | ------------- | --------- |
+| Mon | qbr-sales-costume                   | Revenue & Biz | published |
+| Tue | clients-canceling-during-onboarding | Ops & CX      | published |
+| Wed | agentic-ai-guardrails               | AI Agents     | published |
+| Thu | ai-powered-pkm                      | AI Agents     | published |
+| Fri | human-in-the-loop-signal            | AI Agents     | published |
 
 ---
 
-## Week of 2026-05-11
+## Week of 2026-05-11 ✅ PUBLISHED
 
-| Day | Post                           | Pillar        | Type     | Status |
-| --- | ------------------------------ | ------------- | -------- | ------ |
-| Mon | speed-to-value-over-perfection  | Ops & CX      | linkedin | scheduled |
-| Tue | prompts-vs-systems-compounding | AI Agents     | linkedin | scheduled |
-| Wed | three-meetings-a-day           | Ops & CX      | linkedin | scheduled |
-| Thu | evidence-gap                   | Career Strategy | linkedin | scheduled |
-| Fri | blocking-time-selfish          | Ops & CX      | linkedin | scheduled |
-
-### Notes
-
-- Mon: human-in-the-loop-signal (AI Agents).
-- Thu: Revenue & Biz slot open — strategic-operator moved to May 4. Need a new Rev & Biz draft.
-- **Vulnerability slot**: Tue (three-meetings-a-day) can be rewritten with a personal confession hook per mix rules.
-
-### Pillar Balance: Ops 2, AI 1, Rev 1 + TBD Monday
+| Day | Post                           | Pillar          | Status    |
+| --- | ------------------------------ | --------------- | --------- |
+| Mon | speed-to-value-over-perfection  | Ops & CX        | published |
+| Tue | prompts-vs-systems-compounding | AI Agents       | published |
+| Wed | three-meetings-a-day           | Ops & CX        | published |
+| Thu | evidence-gap                   | Career Strategy | published |
+| Fri | blocking-time-selfish          | Ops & CX        | published |
 
 ---
 
-## Week of 2026-05-18
+## Week of 2026-05-18 ← CURRENT WEEK
 
 | Day | Post                    | Pillar        | Type     | Status |
 | --- | ----------------------- | ------------- | -------- | ------ |
-| Mon | ticket-metric-churn     | Revenue & Biz | linkedin | scheduled |
-| Tue | human-in-the-loop-signal | AI Agents    | linkedin | draft  |
-| Wed | stop-scheduling-meetings | Ops & CX     | linkedin | draft  |
-| Thu | ai-transformation-hire  | AI Agents     | linkedin | draft  |
-| Fri | systems-real-test       | Ops & CX      | linkedin | draft  |
+| Mon | ticket-metric-churn     | Revenue & Biz | linkedin | published |
+| Tue | cancellation-notice     | Ops & CX      | linkedin | scheduled |
+| Wed | ai-transformation-hire  | AI Agents     | linkedin | scheduled |
+| Thu | churn-replacement-cost  | Revenue & Biz | linkedin | scheduled |
+| Fri | systems-real-test       | Ops & CX      | linkedin | scheduled |
 
 ### Notes
 
-- **Narrative slot**: Fri (systems-real-test) is already a proof-of-work archetype — write as personal story.
-- Wed/Fri are Ops & CX; Tue/Thu are AI Agents. Need a Rev & Biz post somewhere — consider swapping one.
+- **Mon**: `ticket-metric-churn` already published.
+- **Tue**: `cancellation-notice` — Support Ops atom (1 of 1 this week). Drives traffic to the case study.
+- **Wed**: `ai-transformation-hire` — opinion post reacting to Codie Sanchez. Confirm screenshot is attached before scheduling.
+- **Thu**: `churn-replacement-cost` — Revenue & Biz, sourced from the saas-retention article (not a Support Ops atom).
+- **Fri**: `systems-real-test` — proof-of-work/personal narrative.
+- **Narrative slot**: Fri (systems-real-test) ✓
+- **Vulnerability slot**: Tue (cancellation-notice) serves as light vulnerability ✓
 
-### Pillar Balance: Ops 2, AI 2 + TBD Monday ⚠️ (no Rev & Biz)
+### Pillar Balance: Ops 2, AI 1, Rev 2 ✓
 
 ---
 
 ## Week of 2026-05-25
 
-| Day | Post              | Pillar    | Type     | Status |
-| --- | ----------------- | --------- | -------- | ------ |
-| Mon | _[shortform TBD]_ | —        | linkedin | needed |
-| Tue | job-redesign-lag  | AI Agents | linkedin | draft  |
-| Wed | firefight-mode    | Ops & CX  | linkedin | draft  |
-| Thu | _[new — Rev & Biz]_ | Revenue & Biz | linkedin | needed |
-| Fri | _[new — Career]_ | Career    | linkedin | needed |
+| Day | Post                       | Pillar          | Type     | Status |
+| --- | -------------------------- | --------------- | -------- | ------ |
+| Mon | cx-priority-hypocrisy      | Ops & CX        | linkedin | draft  |
+| Tue | job-redesign-lag           | AI Agents       | linkedin | draft  |
+| Wed | bridges-self-destruct      | Ops & CX        | linkedin | draft  |
+| Thu | operations-layer-founders  | Revenue & Biz   | linkedin | draft  |
+| Wed | firefight-mode             | Ops & CX        | linkedin | draft  |
+
+### Candidate Swap — Pillar Correction
+
+> ⚠️ Wed and Thu have two Ops posts back-to-back in the draft above. Proposed final schedule:
+
+| Day | Post                       | Pillar          | Type     | Status |
+| --- | -------------------------- | --------------- | -------- | ------ |
+| Mon | cx-priority-hypocrisy      | Ops & CX        | linkedin | draft  |
+| Tue | job-redesign-lag           | AI Agents       | linkedin | draft  |
+| Wed | bridges-self-destruct      | Ops & CX        | linkedin | draft  |
+| Thu | operations-layer-founders  | Revenue & Biz   | linkedin | draft  |
+| Fri | day-after-i-got-let-go     | Career Strategy | linkedin | draft  |
 
 ### Notes
 
-- Tue: final enterprise-ai-strategy atom.
-- Thu, Fri: need new drafts. By this point in the month, review what's performing and write to the winning patterns.
-- **Monthly vulnerability post**: Schedule for this week if not already covered earlier in May.
+- **Mon**: `cx-priority-hypocrisy` — strong opinion/narrative. Score 8.5. Fills the TBD slot.
+- **Tue**: `job-redesign-lag` — AI Agents atom from enterprise-ai-strategy series.
+- **Wed**: `bridges-self-destruct` — Support Ops atom. Ops & CX, engagement intent.
+- **Thu**: `operations-layer-founders` — Rev & Biz framed through ops. Hits the founder/owner audience concentration (17%).
+- **Fri**: `day-after-i-got-let-go` — **Deep vulnerability post for May** (1 per month quota). Personal narrative, Career pillar. Drives follower conversion.
+- `firefight-mode` bumped to June backlog — too many Ops & CX posts this week already.
+- **Narrative slot**: Fri (day-after-i-got-let-go) ✓
+- **Monthly deep vulnerability**: Fri ✓
 
-### Pillar Balance: AI 1, Ops 1, Rev 1, Career 1 + TBD Monday
+### Pillar Balance: Ops 2, AI 1, Rev 1, Career 1 ✓
 
 ---
 
-## Remaining Unscheduled Drafts (available for swaps)
+## Remaining Unscheduled Drafts
 
-| Post              | Pillar    | Notes                                      |
-| ----------------- | --------- | ------------------------------------------ |
-| onboarding-week-one-wrong | Ops & CX | onboarding atom — swap into any Ops slot   |
-| onboarding-trainer-cost   | Ops & CX | onboarding atom — swap into any Ops slot   |
-| onboarding-two-questions  | Ops & CX | onboarding atom — swap into any Ops slot   |
-| onboarding-link-teaser    | Ops & CX | onboarding promo — use if case study needs boost |
+### Support Ops Case Study Atoms (1 atom per week max)
+
+| Post                  | Pillar        | Notes                                            |
+| --------------------- | ------------- | ------------------------------------------------ |
+| ~~cancellation-notice~~   | Ops & CX  | scheduled May 20                                 |
+| ~~bridges-self-destruct~~ | Ops & CX  | scheduled May 27                                 |
+| 14-hires-avoided      | Revenue & Biz | June candidate — 1-per-week rule, not this month |
+
+All 3 atoms link to: https://strategicoperator.ca/case-studies/support-ops-architecture
+
+### Onboarding Case Study Atoms
+
+| Post                      | Pillar   | Notes                                        |
+| ------------------------- | -------- | -------------------------------------------- |
+| onboarding-week-one-wrong | Ops & CX | swap into any Ops slot — June candidate      |
+| onboarding-trainer-cost   | Ops & CX | swap into any Ops slot — June candidate      |
+| onboarding-two-questions  | Ops & CX | swap into any Ops slot — June candidate      |
+| onboarding-link-teaser    | Ops & CX | promo post — use if case study needs a boost |
+
+### Revenue & Biz Backlog
+
+| Post                         | Pillar        | Notes                                       |
+| ---------------------------- | ------------- | ------------------------------------------- |
+| solo-founder-revenue-ceiling | Revenue & Biz | June candidate — strong founder audience fit |
+| ~~churn-replacement-cost~~       | Revenue & Biz | scheduled May 21                            |
+| best-framework-from-mlm      | Revenue & Biz | June candidate                              |
+
+### Career Strategy & Personal Narratives Backlog
+
+| Post                               | Pillar          | Notes                                    |
+| ---------------------------------- | --------------- | ---------------------------------------- |
+| banking-to-it-to-ai                | Career Strategy | strong narrative — June candidate        |
+| fifty-applications-ats-lesson      | Career Strategy | June candidate                           |
+| taught-myself-to-code-at-44        | Career Strategy | proof-of-work / personal — June candidate |
+| fifteen-years-no-proof             | Career Strategy | June candidate                           |
+| built-my-own-ai-os                 | Career Strategy | narrative — June candidate               |
+| better-father-first                | Personal        | vulnerability — schedule deliberately    |
+| meditation-made-me-better-operator | Personal        | June candidate                           |
+| walking-in-minus-18                | Personal        | June candidate                           |
+| one-relationship-two-interviews    | Career Strategy | June candidate                           |
+| peak-earning-years                 | Career Strategy | June candidate                           |
+| fifteen-hours-on-a-case-study      | Career Strategy | June candidate                           |
+
+### Ops & CX Backlog
+
+| Post                   | Pillar   | Notes                                       |
+| ---------------------- | -------- | ------------------------------------------- |
+| firefight-mode         | Ops & CX | bumped from May 25 — June candidate         |
+| stop-scheduling-meetings | Ops & CX | June candidate                            |
+| agentic-ai-separated-concern | AI Agents | June candidate — Separated Concern pattern |
 
 ---
 
 ## Open Items
 
-- [ ] **automating-client-followups case study**: Chris needs to provide 6 answers before this can be finalized. Could fill a Monday long-form slot.
-- [ ] **May Monday articles (weeks 2–4)**: Need to identify topics for weeks 2-4. Options: expand a strong LinkedIn post, write a new article, or publish the client-followups case study.
-- [ ] **Revenue & Biz pillar gap**: Backlog is heavily Ops & AI. Need 2-3 new Revenue & Biz drafts for May to maintain pillar balance.
-- [ ] **Career pillar**: Only 1 slot planned (May 25). Consider adding 1 more if a personal narrative naturally fits.
+- [x] **ai-transformation-hire (May 20)**: Confirm Codie Sanchez screenshot is ready before scheduling.
+- [ ] **May 25 week**: Review drafts above and approve for Buffer scheduling.
+- [ ] **automating-client-followups case study**: Chris needs to provide 6 answers. Could anchor a June week.
+- [ ] **June calendar**: Initialize week of June 1. Deep backlog exists — prioritize Career/Personal narratives early in June to maintain 20% personal brand mix.
 - [ ] **saas-vs-msp article**: Not yet written. Schedule when ready.
+- [ ] **Monthly analytics review**: June 11–15. Next content mix rule update.

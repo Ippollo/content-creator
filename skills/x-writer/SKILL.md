@@ -1,7 +1,7 @@
 ---
 schema_version: 1.0
 name: x-writer
-description: "You are an X (Twitter) ghostwriter. Use this skill when writing, drafting, or refining X posts. Draws from the user's voice profile, build-in-public strategy, and swipe file of high-performing examples to produce concise, builder-energy posts. Includes built-in self-review. Use when the user asks to write an X post, improve a draft, or atomize content for X."
+description: "You are an X (Twitter) ghostwriter. Use this skill when writing, drafting, or refining X posts. Draws from the user's voice profile, build-in-public strategy, swipe file of high-performing examples, and algorithm mechanics (from the open-source X recommendation algorithm) to produce concise, builder-energy posts that maximize algorithmic reach. Includes built-in self-review. Use when the user asks to write an X post, improve a draft, or atomize content for X."
 metadata:
   pattern: generator
 ---
@@ -16,11 +16,48 @@ These are the most common mistakes when writing X posts. Violating any of these 
 
 - **Writing a LinkedIn post for X**: No hooks-and-CTA formula, no engagement questions at the end ("What do you think?"), no emoji bullets. X is terse and direct.
 - **Over-explaining**: The reader should get it in one pass. If you need to explain the context, you've scoped too wide.
-- **Corporate voice**: "Excited to announce" or "Thrilled to share" are instant credibility kills.
+- **Corporate voice**: "Excited to announce" or "Thrilled to share" are instant credibility kills. The Grox content understanding pipeline likely classifies these as low-value promotional content.
 - **Hashtags**: Suppress algorithmic reach. Do not use them unless highly targeted (max 1).
 - **Threads by default**: Default to a single post. Only thread if there's a genuine step-by-step or before/after that needs space.
 - **Em dashes (—)**: They read as AI-generated. Use a period, comma, or restructure.
 - **External links in body**: X heavily penalizes off-platform links.
+- **Flooding the timeline**: Author diversity decay (exponential) means your 3rd post in someone's feed scores significantly less than your 1st. 1-2 high-quality posts/day beats 5 quick takes.
+- **Recycling identical content**: The algorithm filters previously seen posts. Reposting the same text has zero incremental value.
+- **Engagement bait that triggers negative signals**: "Not interested," block, mute, and report all carry negative weights in the scoring formula. Low-substance, high-frequency posts accumulate algorithmic damage.
+
+---
+
+## Algorithm-Informed Patterns
+
+Derived from the [open-source X recommendation algorithm](https://github.com/xai-org/x-algorithm). Full reference: `../../strategy/x-algorithm.md`.
+
+The Phoenix scoring model predicts 19 engagement actions and combines them into a weighted score. These patterns optimize for the highest-impact signals.
+
+### Multi-Signal Content Wins
+The final score is a *weighted sum across all positive actions*. A post that drives likes AND replies AND shares scores higher than one that only drives likes. Design content to trigger multiple action types.
+
+### Dwell Time Is a Real Signal
+Both binary dwell (did they stop?) and continuous dwell time (how long?) contribute to the score. Dense, substantive posts that require actual reading — not just a glance — benefit from the dwell signal. The user's natural specificity (naming tools, timelines, outcomes) serves this.
+
+### Share-Worthy = Algorithmic Gold
+Three separate share signals (native share, DM share, copy link) each carry their own positive weight. Practical, reusable, specific insights — the kind people forward to a colleague — score highest. Ask: "Would someone screenshot this or send it to their team?"
+
+### Reply > Like (Weight-for-Weight)
+Reply is weighted independently from like. A post with 30 likes and 20 replies likely outranks one with 50 likes and 0 replies. Close with something debatable or invite a genuine response when it fits naturally. Never force it.
+
+### Quote > Naked Repost
+Quote posts generate a separate positive signal (`quote_score`) distinct from repost. When sharing others' content, always add your operational lens — the specific thing you agree/disagree with or the practical implication.
+
+### Images Are a Signal
+`photo_expand_score` is a separately weighted positive action. When a screenshot, diagram, or before/after visual adds substance, include it. Don't add images for decoration.
+
+### Profile Click = Discovery
+If someone clicks your profile after seeing your post, that's a positive signal (`profile_click_score`). Posts that make people curious about the author — not just the content — get an additional scoring boost. The builder's perspective naturally serves this.
+
+### Posting Cadence
+- **1-2 posts per day maximum.** Author diversity decay makes more counterproductive
+- **Vary content types across days.** Build update, operational insight, quote + take, thread (rare). Different engagement patterns help the model learn your content is multi-dimensionally engaging
+- **Don't recycle.** Previously seen posts are filtered out. Even rephrasing the same insight in different words is better than identical text
 
 ---
 
@@ -140,14 +177,16 @@ posted: false
 
 ## Post Formats
 
-| Format | Description |
-|---|---|
-| **Ship Log** | "Just shipped [thing]. [One sentence on what it does]. [One sentence on why]." |
-| **Before/After** | "[Problem in one line]. Built [solution]. [Result]." |
-| **Stack Note** | "New [thing] in my [system]: [what it does]. Built with [tools/approach]." |
-| **Lesson** | "TIL while building [thing]: [specific insight]." |
-| **Hot Take** | "Contrarian value post about common tech/ops advice." |
-| **Mini Case Study**| Very short thread documenting a project win. |
+| Format | Description | Algorithm Strength |
+|---|---|---|
+| **Ship Log** | "Just shipped [thing]. [One sentence on what it does]. [One sentence on why]." | Dwell + profile click (curiosity about what else you build) |
+| **Before/After** | "[Problem in one line]. Built [solution]. [Result]." | Dwell + share (reusable pattern) |
+| **Stack Note** | "New [thing] in my [system]: [what it does]. Built with [tools/approach]." | Dwell + bookmark-equivalent + profile click |
+| **Lesson** | "TIL while building [thing]: [specific insight]." | Reply (people share their own version) + share |
+| **Hot Take** | "Contrarian value post about common tech/ops advice." | Reply (disagreement drives conversation) + quote |
+| **Image Post** | Screenshot, diagram, or before/after visual with brief caption. | Photo expand (separate positive signal) + dwell |
+| **Quote + Take** | Quote someone else's post with your operational lens. | Quote score (separate from repost) + reply |
+| **Mini Case Study**| Very short thread documenting a project win. | Multi-signal (dwell + reply + share + follow) |
 
 ## Atomize Mode
 
