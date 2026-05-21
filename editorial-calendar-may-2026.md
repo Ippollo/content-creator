@@ -75,19 +75,7 @@
 | --- | -------------------------- | --------------- | -------- | ------ |
 | Mon | cx-priority-hypocrisy      | Ops & CX        | linkedin | draft  |
 | Tue | job-redesign-lag           | AI Agents       | linkedin | draft  |
-| Wed | bridges-self-destruct      | Ops & CX        | linkedin | draft  |
-| Thu | operations-layer-founders  | Revenue & Biz   | linkedin | draft  |
 | Wed | firefight-mode             | Ops & CX        | linkedin | draft  |
-
-### Candidate Swap — Pillar Correction
-
-> ⚠️ Wed and Thu have two Ops posts back-to-back in the draft above. Proposed final schedule:
-
-| Day | Post                       | Pillar          | Type     | Status |
-| --- | -------------------------- | --------------- | -------- | ------ |
-| Mon | cx-priority-hypocrisy      | Ops & CX        | linkedin | draft  |
-| Tue | job-redesign-lag           | AI Agents       | linkedin | draft  |
-| Wed | bridges-self-destruct      | Ops & CX        | linkedin | draft  |
 | Thu | operations-layer-founders  | Revenue & Biz   | linkedin | draft  |
 | Fri | day-after-i-got-let-go     | Career Strategy | linkedin | draft  |
 
@@ -95,10 +83,10 @@
 
 - **Mon**: `cx-priority-hypocrisy` — strong opinion/narrative. Score 8.5. Fills the TBD slot.
 - **Tue**: `job-redesign-lag` — AI Agents atom from enterprise-ai-strategy series.
-- **Wed**: `bridges-self-destruct` — Support Ops atom. Ops & CX, engagement intent.
+- **Wed**: `firefight-mode` — Ops & CX post pulled in from backlog to allow 2-week spacing for Support Ops atoms.
 - **Thu**: `operations-layer-founders` — Rev & Biz framed through ops. Hits the founder/owner audience concentration (17%).
 - **Fri**: `day-after-i-got-let-go` — **Deep vulnerability post for May** (1 per month quota). Personal narrative, Career pillar. Drives follower conversion.
-- `firefight-mode` bumped to June backlog — too many Ops & CX posts this week already.
+- `bridges-self-destruct` rescheduled to Wednesday June 3 to ensure 2-week spacing from `cancellation-notice`.
 - **Narrative slot**: Fri (day-after-i-got-let-go) ✓
 - **Monthly deep vulnerability**: Fri ✓
 
@@ -108,13 +96,14 @@
 
 ## Remaining Unscheduled Drafts
 
-### Support Ops Case Study Atoms (1 atom per week max)
+### Support Ops Case Study Atoms (1 atom per week max, spaced at least 2 weeks apart)
 
 | Post                  | Pillar        | Notes                                            |
 | --------------------- | ------------- | ------------------------------------------------ |
-| ~~cancellation-notice~~   | Ops & CX  | scheduled May 20                                 |
-| ~~bridges-self-destruct~~ | Ops & CX  | scheduled May 27                                 |
-| 14-hires-avoided      | Revenue & Biz | June candidate — 1-per-week rule, not this month |
+| ~~cancellation-notice~~   | Ops & CX  | published May 20                                 |
+| ~~bridges-self-destruct~~ | Ops & CX  | scheduled June 3 (June 1 week)                   |
+| ~~14-hires-avoided~~  | Revenue & Biz | scheduled June 17 (June 15 week)                 |
+| ~~discipline-of-restraint~~ | Ops & CX | scheduled June 30 (June 29 week)                 |
 
 All 3 atoms link to: https://strategicoperator.ca/case-studies/support-ops-architecture
 
@@ -166,6 +155,6 @@ All 3 atoms link to: https://strategicoperator.ca/case-studies/support-ops-archi
 - [x] **ai-transformation-hire (May 20)**: Confirm Codie Sanchez screenshot is ready before scheduling.
 - [ ] **May 25 week**: Review drafts above and approve for Buffer scheduling.
 - [ ] **automating-client-followups case study**: Chris needs to provide 6 answers. Could anchor a June week.
-- [ ] **June calendar**: Initialize week of June 1. Deep backlog exists — prioritize Career/Personal narratives early in June to maintain 20% personal brand mix.
+- [x] **June calendar**: Initialized week of June 1 and June 8 in c:\HQ\content-creator\editorial-calendar-june-2026.md.
 - [ ] **saas-vs-msp article**: Not yet written. Schedule when ready.
 - [ ] **Monthly analytics review**: June 11–15. Next content mix rule update.

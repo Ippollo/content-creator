@@ -83,7 +83,7 @@ This decision affects hook style, CTA design, and tone. Don't try to optimize fo
 - Open with a hook that stops the scroll — draw hook STYLE from swipe file patterns (never copy content)
 - Keep to 800–1300 characters unless the user specifies otherwise
 - Short paragraphs: 1–3 sentences max, with blank lines between
-- End with a clear CTA that invites engagement (comment, share perspective, disagree)
+- End with a mic-drop thought or reframe — no engagement questions, no CTAs. State the final insight and stop.
 - Do NOT use emojis in the first line
 - Do NOT start with "I"
 - Do NOT include hashtags
@@ -163,7 +163,7 @@ Output the final post in this format:
 ```
 
 > [!NOTE]
-> "Both" intent is only valid for personal narratives and vulnerability posts — the only archetype where analytics show high reach AND high engagement. For all other posts, you must pick one. If you can't decide, default to Engagement — it's harder to manufacture and more valuable to the algorithm.
+> "Both" intent is only valid for personal narratives and vulnerability posts — the only archetype where analytics show high reach AND high engagement. For all other posts, you must pick one. If you can't decide, default to Reach — broader impressions build the audience first.
 
 Below the post, include:
 
