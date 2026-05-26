@@ -18,10 +18,13 @@ case-studies/published/
 case-studies/sources/
 case-studies/images/
 x/drafts/
-editorial-calendar.md
+editorial-calendar*.md
 LinkedIn 360Brew Deep-Dive Report.md
 voice/voice-guide.md
 strategy/pillars.md
+
+# Archived calendars and content
+archive/
 
 # Site-specific skills (hardcoded to personal website)
 skills/website-copywriter/
