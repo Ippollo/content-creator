@@ -21,24 +21,27 @@ LinkedIn Post ──→ Blog Article (expand)
 
 ```
 skills/
-  blog-writer/           — Long-form SEO blog articles
+  blog-writer/           — Long-form SEO blog articles (argument architecture, checklist gate, persona review)
   linkedin-writer/       — LinkedIn posts (standalone or atomized)
-  case-study-writer/     — Case studies from real project experience
+  case-study-writer/     — Case studies from real project experience (SCAR framework, persona review)
+  x-writer/              — X/Twitter posts (build-in-public, algorithm-informed)
   content-multiplier/    — Orchestrates atomize/expand flows
-  content-reviewer/      — Platform-agnostic quality scoring
+  content-reviewer/      — Platform-agnostic quality scoring (long-form editorial checks)
   content-calendar/      — Editorial calendar, scheduling, pillar balance
 
 strategy/
   pillars.md             — Niche, topic clusters, positioning
   algorithm.md           — LinkedIn algorithm rules
+  x-algorithm.md         — X algorithm rules (from open-source code)
   seo-guidelines.md      — Blog SEO playbook
 
-voice/                   — Your voice fingerprint and writing style
+voice/                   — Your voice fingerprint and writing style (multi-format)
 
 swipe-file/
   linkedin/              — Curated LinkedIn post examples
   blog/                  — Curated blog article examples
   case-studies/          — Curated case study examples
+  x/                     — Curated X post examples
 
 editorial-calendar.md    — Persistent publishing schedule (managed by content-calendar)
 
@@ -49,6 +52,9 @@ articles/
 linkedin/
   drafts/                — LinkedIn post drafts
   published/             — Published LinkedIn posts
+
+x/
+  drafts/                — X post drafts
 
 case-studies/
   sources/               — Raw project notes, briefs, evidence

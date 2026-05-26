@@ -50,7 +50,45 @@ After identifying issues in Step 1, explicitly ask: **"Would removing this secti
 
 For blog articles, flag any H2 section exceeding 300 words. Suggest breaking it into subsections (H3s) or splitting into two H2s. Long sections hurt scanability and dwell time.
 
----
+### Argument Progression Check (long-form only)
+
+Run the reorder test: could any two H2 sections swap positions without breaking the article's logic? If yes, the sections are stacked in parallel (list-style) rather than building an argument (progressive). Flag this and suggest restructuring so each section builds on the previous one's conclusion.
+
+This is the single most common structural weakness in long-form drafts. An article with parallel sections reads like an expanded bullet list, not an argument.
+
+### Transition Quality Check (long-form only)
+
+Read the last sentence of each H2 section and the first sentence of the next section. Are they connected by the argument, or does the new section just start on a new topic?
+
+- **Good transition**: The closing line raises a question that the opening line of the next section addresses.
+- **Bad transition**: The section ends with a complete thought, and the next section opens with a new topic as if starting from scratch.
+
+Explicit connectors ("Furthermore," "That said," "Now let's look at...") are not transitions — they're band-aids over a missing argumentative link. Flag them and suggest rewriting the section endings to create natural hand-offs.
+
+### Evidence Density Check (long-form only)
+
+For articles of 1,500+ words, count distinct named sources (research reports, named companies, named tools, specific personal experiences). Flag if fewer than 3 distinct named sources appear across the article.
+
+A single citation in a 2,000-word authority piece is thin. The author's positioning is "expert operator" — expertise is demonstrated through evidence density, not assertion.
+
+### Voice Consistency Check (long-form only)
+
+Read the first two paragraphs and the last body section of the article back-to-back. Does the tone sound like the same person wrote both?
+
+The most common voice drift in long-form is from "operator explaining" (direct, conversational, specific) to "consultant presenting" (formal, process-y, abstract). Signals:
+- Passive voice increasing mid-article
+- Longer sentences with multiple qualifications
+- Abstract process language ("establish a cross-functional steering committee," "align with strategic objectives")
+- Bullet lists of recommendations that read like a management slide deck
+
+Flag any section where the register shifts noticeably. Suggest rewriting in the voice of the opening sections.
+
+### Closing Quality Check (all formats)
+
+Test for the affirmative, not just the negative. The existing anti-pattern blacklist catches summary endings. This check tests whether the closing *actively* does something:
+
+- **Article closings**: Does the final line reframe the thesis into something the reader has to apply to themselves? A question they must answer, or an observation that extends beyond the article's scope? If the closing is just "the thesis, stated one more time," it fails.
+- **Short-form closings**: Does the post end on a mic-drop thought or reframe? If it fades out or wraps up neatly, it fails.
 
 ## Review Protocol
 
@@ -147,6 +185,7 @@ max_passes: 3
 
 - **linkedin-writer** — caller; supplies LinkedIn-specific rubrics
 - **blog-writer** — caller; supplies blog-specific rubrics (Voice, Structure, SEO)
-- _(Future callers: twitter-writer, newsletter-writer, etc.)_
+- **case-study-writer** — caller; supplies case-study-specific rubrics (Evidence, Narrative, Credibility)
+- **x-writer** — caller; supplies X-specific rubrics (Voice, Structure)
 
 > **Scope note**: This is a local skill within the `content-creator` project. All platform skills that delegate to it must be co-located in the same project.

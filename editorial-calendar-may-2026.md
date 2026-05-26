@@ -45,15 +45,15 @@
 
 ---
 
-## Week of 2026-05-18 ← CURRENT WEEK
+## Week of 2026-05-18 ✅ PUBLISHED
 
 | Day | Post                    | Pillar        | Type     | Status |
 | --- | ----------------------- | ------------- | -------- | ------ |
 | Mon | ticket-metric-churn     | Revenue & Biz | linkedin | published |
-| Tue | cancellation-notice     | Ops & CX      | linkedin | scheduled |
-| Wed | ai-transformation-hire  | AI Agents     | linkedin | scheduled |
-| Thu | churn-replacement-cost  | Revenue & Biz | linkedin | scheduled |
-| Fri | systems-real-test       | Ops & CX      | linkedin | scheduled |
+| Tue | cancellation-notice     | Ops & CX      | linkedin | published |
+| Wed | ai-transformation-hire  | AI Agents     | linkedin | published |
+| Thu | churn-replacement-cost  | Revenue & Biz | linkedin | published |
+| Fri | systems-real-test       | Ops & CX      | linkedin | published |
 
 ### Notes
 
@@ -73,20 +73,19 @@
 
 | Day | Post                       | Pillar          | Type     | Status |
 | --- | -------------------------- | --------------- | -------- | ------ |
-| Mon | cx-priority-hypocrisy      | Ops & CX        | linkedin | draft  |
-| Tue | job-redesign-lag           | AI Agents       | linkedin | draft  |
-| Wed | firefight-mode             | Ops & CX        | linkedin | draft  |
-| Thu | operations-layer-founders  | Revenue & Biz   | linkedin | draft  |
-| Fri | day-after-i-got-let-go     | Career Strategy | linkedin | draft  |
+| Mon | cx-priority-hypocrisy      | Ops & CX        | linkedin | scheduled |
+| Tue | job-redesign-lag           | AI Agents       | linkedin | scheduled |
+| Wed | bridges-self-destruct      | Ops & CX        | linkedin | scheduled |
+| Thu | operations-layer-founders  | Revenue & Biz   | linkedin | scheduled |
+| Fri | day-after-i-got-let-go     | Career Strategy | linkedin | scheduled |
 
 ### Notes
 
-- **Mon**: `cx-priority-hypocrisy` — strong opinion/narrative. Score 8.5. Fills the TBD slot.
+- **Mon**: `cx-priority-hypocrisy` — strong opinion/narrative. Score 9. Fills the TBD slot.
 - **Tue**: `job-redesign-lag` — AI Agents atom from enterprise-ai-strategy series.
-- **Wed**: `firefight-mode` — Ops & CX post pulled in from backlog to allow 2-week spacing for Support Ops atoms.
+- **Wed**: `bridges-self-destruct` — Support Ops case study atom (1 of 1 this week). AWS temporary infrastructure strategy.
 - **Thu**: `operations-layer-founders` — Rev & Biz framed through ops. Hits the founder/owner audience concentration (17%).
 - **Fri**: `day-after-i-got-let-go` — **Deep vulnerability post for May** (1 per month quota). Personal narrative, Career pillar. Drives follower conversion.
-- `bridges-self-destruct` rescheduled to Wednesday June 3 to ensure 2-week spacing from `cancellation-notice`.
 - **Narrative slot**: Fri (day-after-i-got-let-go) ✓
 - **Monthly deep vulnerability**: Fri ✓
 
@@ -101,7 +100,7 @@
 | Post                  | Pillar        | Notes                                            |
 | --------------------- | ------------- | ------------------------------------------------ |
 | ~~cancellation-notice~~   | Ops & CX  | published May 20                                 |
-| ~~bridges-self-destruct~~ | Ops & CX  | scheduled June 3 (June 1 week)                   |
+| ~~bridges-self-destruct~~ | Ops & CX  | approved May 27                                  |
 | ~~14-hires-avoided~~  | Revenue & Biz | scheduled June 17 (June 15 week)                 |
 | ~~discipline-of-restraint~~ | Ops & CX | scheduled June 30 (June 29 week)                 |
 

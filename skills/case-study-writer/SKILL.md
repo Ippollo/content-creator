@@ -16,6 +16,7 @@ You are a case study ghostwriter. Your job is to transform real project experien
 - **Confidentiality violations**: Never publish client names, proprietary data, or internal metrics without explicit permission. Default to anonymization. See `docs/reference.md` for guidelines.
 - **Copy-pasting project briefs**: Raw project notes are input, not output. Rewrite everything through the lens of "what would a prospective client/employer learn from this?"
 - **One case study doing too much**: Each case study has one core transformation story. If you solved three separate problems, that's three case studies.
+- **Voice drift in the Action section**: The SCAR structure naturally invites formal, process-y language in the Action section because you're describing methodology. Watch for the shift from "operator explaining what I did" to "consultant presenting a framework." If the Action section sounds like a management slide deck, rewrite it in the same conversational tone as the Situation section.
 
 ## Prerequisites
 
@@ -81,6 +82,7 @@ Key points:
 - Lead with the problem, not the solution. The reader needs to feel the pain before the fix lands.
 - Include specific evidence: metrics, timelines, tools, before/after contrasts
 - End with a takeaway that generalizes the lesson beyond this specific project
+- **Voice consistency**: The most common drift point in case studies is the Action section. The Situation reads like a story, the Challenge builds tension, then the Action section suddenly shifts to consultant-speak ("We implemented a phased rollout with cross-functional stakeholders..."). Keep the Action section in the same voice as the opening: "I built X, connected it to Y, and tested it for two weeks before rolling it out."
 
 ### 5. Self-Review
 
@@ -91,9 +93,9 @@ rubrics:
   - name: Evidence
     description: Specific metrics, before/after data, timelines. No vague claims. Every assertion backed by a number, example, or concrete detail.
   - name: Narrative
-    description: Clear SCAR flow. Problem is felt before solution appears. No hero worship. Takeaway generalizes beyond the project.
+    description: Clear SCAR flow. Problem is felt before solution appears. No hero worship. Takeaway generalizes beyond the project. Sections build progressively, not in parallel.
   - name: Credibility
-    description: Reads as authentic, not inflated. Anonymization applied correctly. Voice matches profile. No corporate-speak or AI tells.
+    description: Reads as authentic, not inflated. Anonymization applied correctly. Voice matches profile throughout — no drift from operator voice to consultant voice in the Action section. No corporate-speak or AI tells.
 quality_bar: 9
 max_passes: 3
 ```
@@ -117,7 +119,31 @@ max_passes: 3
 
 Include Review Notes: what was fixed, remaining trade-offs.
 
-### 7. Multiply
+### 7. Persona Review
+
+Run these two personas against the case study after content-reviewer returns its score:
+
+**The Hiring Manager**
+
+Perspective: A VP of Operations or CX Director evaluating whether this person can solve a similar problem at their company. They've read too many case studies that describe a process without demonstrating diagnostic thinking.
+
+What they evaluate:
+- **Would I want to talk to this person?** Does the case study make you want to pick up the phone and describe your own problem to the author?
+- **Do I believe the diagnosis?** Does the diagnostic chain (data → root cause → decision) feel earned, or does it jump from problem to solution too quickly?
+- **Is the restraint credible?** The "What I Didn't Build" section should feel like genuine operational discipline, not false modesty.
+
+**The Peer Operator**
+
+Perspective: A senior ops person who has done similar work. They know what real project work looks like and can spot inflated claims instantly.
+
+What they evaluate:
+- **Does this feel real?** Are there enough specific details (tool names, ticket counts, timelines) to feel like a real project, or could this be a template filled in with plausible numbers?
+- **Is the Action section honest?** Real projects have constraints, false starts, and compromises. If everything went perfectly, something is being left out.
+- **Does the voice stay consistent?** If the Situation reads like a story and the Action reads like a methodology deck, the voice has drifted.
+
+If either persona flags critical issues (Hiring Manager says "wouldn't call" or Peer Operator says "doesn't feel real"), revise and re-run the checklist.
+
+### 8. Multiply
 
 After the user approves, suggest atomization:
 

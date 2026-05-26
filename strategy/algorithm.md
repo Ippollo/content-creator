@@ -38,6 +38,14 @@ High impressions and high engagement are driven by different levers. Analytics s
 
 Decide the intent **before drafting**. Trying to optimize for both in the same post dilutes both signals.
 
+### Follower Conversion (distinct from reach and engagement)
+
+High impressions ≠ new followers. Reach posts can drive 10,000+ impressions but convert at < 0.05% to new followers if the viewer clicks through to a profile that doesn't clearly answer "why should I follow this person?"
+
+- **Profile is the bottleneck**, not the post. When someone reads a strong post and visits your profile, the headline, featured section, and About copy must immediately communicate what they'll get by following.
+- **Vulnerability and identity posts convert followers at 5–10× the rate of reach posts** — even at much lower impression counts. A 2,000-impression vulnerability post can add more followers than a 50,000-impression reach post.
+- **Lever**: If running a high-reach format, pair it with a profile refresh and a pinned follow-up post that converts the residual attention.
+
 ### Post Longevity
 
 - Posts can resurface over several days (not just 24h) if comments remain active, saves are strong, and the topic stays timely.
@@ -54,7 +62,7 @@ Decide the intent **before drafting**. Trying to optimize for both in the same p
 
 ## Banned Formats (data-backed, May 2026)
 
-These formats are permanently banned based on 12 months of analytics showing consistent underperformance. Reviewed monthly — next review: June 11–15, 2026.
+These formats are permanently banned based on 12 months of analytics showing consistent underperformance. Reviewed monthly — next review: July 1–6, 2026.
 
 ### ugcPost Reshares
 Resharing another person's post with your commentary. Every ugcPost in the dataset landed below 300 impressions. The algorithm deprioritizes reshared content vs. original content.
