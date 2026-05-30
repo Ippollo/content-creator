@@ -27,6 +27,10 @@ skills/
   x-writer/              — X/Twitter posts (build-in-public, algorithm-informed)
   content-multiplier/    — Orchestrates atomize/expand flows
   content-reviewer/      — Platform-agnostic quality scoring (long-form editorial checks)
+    rubrics/
+      article.md         — Article scoring rubric (Voice, Structure, Evidence, SEO, Editorial)
+      case-study.md      — Case study scoring rubric (SCAR structure, operational evidence, persona tests)
+      linkedin.md        — LinkedIn scoring rubric (Algorithm, Specificity replace SEO, Evidence)
   content-calendar/      — Editorial calendar, scheduling, pillar balance
 
 strategy/
@@ -36,6 +40,15 @@ strategy/
   seo-guidelines.md      — Blog SEO playbook
 
 voice/                   — Your voice fingerprint and writing style (multi-format)
+
+workflows/
+  write-article.md       — Full blog article pipeline (research → outline → draft → review)
+  write-case-study.md    — Case study pipeline (intake → SCAR outline → draft → review)
+  review-content.md      — Standalone review and scoring against canonical rubrics
+  atomize.md             — Break pillar content into platform-specific posts
+  publish.md             — Batch publish approved posts to Buffer
+  comment.md             — Grab today's first-comment from the editorial calendar
+  x-post.md              — Draft X posts for build-in-public updates
 
 swipe-file/
   linkedin/              — Curated LinkedIn post examples
@@ -99,9 +112,35 @@ Propose a schedule for my draft posts for the next 2 weeks.
 /publish
 ```
 
+### Review and score a draft
+```
+Review and score [draft file]
+```
+or
+```
+/review-content
+```
+Loads the canonical rubric for the content type (article, case study, or LinkedIn) and produces a standardized scorecard. Five dimensions, each scored /10. Review-only — does not rewrite the draft.
+
 ### Grab today's first-comment
 ```
 /comment
 ```
+
+## Scoring System
+
+All content review uses canonical rubrics in `skills/content-reviewer/rubrics/`. Each rubric defines:
+- **5 dimensions** scored `/10` (dimension names vary by content type)
+- **Score anchors** for 10, 7, and 5 to calibrate scoring
+- **Required fixes** for any dimension scoring ≤7
+- **Locked output format** — same structure every time
+
+| Content Type | Rubric | Dimensions |
+|---|---|---|
+| Article | `rubrics/article.md` | Voice, Structure, Evidence, SEO, Editorial |
+| Case Study | `rubrics/case-study.md` | Voice, Structure, Evidence, SEO, Editorial |
+| LinkedIn | `rubrics/linkedin.md` | Voice, Structure, Algorithm, Specificity, Editorial |
+
+Each rubric references its source-of-truth strategy file (articles/case studies → `seo-guidelines.md`, LinkedIn → `algorithm.md`) rather than restating rules inline.
 
 The agent reads your voice profile, strategy, SEO guidelines, and swipe files automatically via the appropriate skill.
