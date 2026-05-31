@@ -16,7 +16,7 @@ description: Grab today's first-comment from the editorial calendar and display 
 
 ### Step 1: Find Today's Post
 
-Read `editorial-calendar.md` and find the entry for today's date.
+Read the current editorial calendar (`editorial-calendar-{month}-{year}.md`) and find the entry for today's date.
 
 - **If no post today**: "No post scheduled for today."
 - **If post found**: Continue to Step 2.

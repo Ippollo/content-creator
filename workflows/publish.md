@@ -20,7 +20,7 @@ Buffer handles everything after scheduling — no `published` status needed in o
 
 ## Prerequisites
 
-- `editorial-calendar.md` has posts with status `approved` and assigned dates
+- The current editorial calendar (e.g., `editorial-calendar-june-2026.md`) has posts with status `approved` and assigned dates
 - Corresponding draft files exist in `linkedin/drafts/`
 - `.env` has a valid `BUFFER_ACCESS_TOKEN`
 
@@ -30,7 +30,7 @@ Buffer handles everything after scheduling — no `published` status needed in o
 
 ### Step 1: Find Approved Posts
 
-Read `editorial-calendar.md`. For each weekly schedule table, find rows where Status = `approved`.
+Read the current editorial calendar (`editorial-calendar-{month}-{year}.md`). For each weekly schedule table, find rows where Status = `approved`.
 
 For each match, resolve the actual date:
 - The week header (e.g., `## Week of 2026-04-06`) gives the Monday date
@@ -80,7 +80,7 @@ For each successfully scheduled post:
 
 1. **Update frontmatter**: Set `status: scheduled` and add `buffer_date: YYYY-MM-DD`
 2. **Move file**: If in `linkedin/drafts/`, move to `linkedin/published/`
-3. **Update calendar**: Change status from `approved` → `scheduled` in `editorial-calendar.md`
+3. **Update calendar**: Change status from `approved` → `scheduled` in the editorial calendar
 
 For failed posts, leave status as `approved` so they can be retried.
 
@@ -121,6 +121,6 @@ node scripts/buffer-publish.js --pending
 
 - All posts are scheduled at **8:00 AM Mountain** by default. Adjust the time in the command if needed.
 - First-comments are NOT part of this workflow. Use `/comment` daily when posts go live.
-- If `editorial-calendar.md` doesn't exist or has no `approved` posts, exit with a message.
+- If no editorial calendar exists for the current month or has no `approved` posts, exit with a message.
 - Buffer API token expires (check duration at regeneration). Regenerate at https://publish.buffer.com/settings/api
 - The `/publish` workflow does NOT assign dates. Dates come from the editorial calendar, which is built intentionally before this step.

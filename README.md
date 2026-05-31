@@ -56,7 +56,7 @@ swipe-file/
   case-studies/          — Curated case study examples
   x/                     — Curated X post examples
 
-editorial-calendar.md    — Persistent publishing schedule (managed by content-calendar)
+editorial-calendar-{month}-{year}.md  — Monthly publishing schedule (managed by content-calendar)
 
 articles/
   drafts/                — Blog article drafts
