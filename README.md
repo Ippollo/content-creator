@@ -27,6 +27,7 @@ skills/
   x-writer/              — X/Twitter posts (build-in-public, algorithm-informed)
   content-multiplier/    — Orchestrates atomize/expand flows
   content-reviewer/      — Platform-agnostic quality scoring (long-form editorial checks)
+  content-scout/         — Evaluate external sources for content potential (rubric-based)
     rubrics/
       article.md         — Article scoring rubric (Voice, Structure, Evidence, SEO, Editorial)
       case-study.md      — Case study scoring rubric (SCAR structure, operational evidence, persona tests)
@@ -42,6 +43,7 @@ strategy/
 voice/                   — Your voice fingerprint and writing style (multi-format)
 
 workflows/
+  scout.md               — Evaluate external content for content creation potential
   write-article.md       — Full blog article pipeline (research → outline → draft → review)
   write-case-study.md    — Case study pipeline (intake → SCAR outline → draft → review)
   review-content.md      — Standalone review and scoring against canonical rubrics
@@ -55,6 +57,8 @@ swipe-file/
   blog/                  — Curated blog article examples
   case-studies/          — Curated case study examples
   x/                     — Curated X post examples
+
+sources/                 — Bookmarked scout reports (external content flagged for later)
 
 editorial-calendar-{month}-{year}.md  — Monthly publishing schedule (managed by content-calendar)
 
@@ -76,6 +80,13 @@ case-studies/
 ```
 
 ## Usage
+
+### Scout external content
+```
+/scout [url]
+/scout [url1] [url2] [url3]
+```
+Evaluates external content sources (articles, videos, podcasts, posts) against your pillars and prior art. Produces a scored Scout Report with proposed angles.
 
 ### Write a blog article
 ```
