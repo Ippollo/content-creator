@@ -204,6 +204,50 @@ These have enough in the vault for a single strong post, no long-form article re
 
 ---
 
+## Tier 3: MSP Buyer-Relevant Topics (Lead Gen)
+
+These topics are tailored for founders/owners evaluating MSPs. They address specific pain points IT buyers experience.
+
+### 15. "Evaluating if Your MSP is Strategic or Break-Fix"
+
+**Hook**: "How to evaluate whether your MSP is actually strategic or just break-fix with a tie."
+
+**Operational detail**: Focus on the difference between reactive ticket resolution (break-fix) and proactive architecture (strategic). The CIO/CTO/COO lens.
+
+---
+
+### 16. "Real IT Roadmaps vs. Slide Decks"
+
+**Hook**: "What a real IT roadmap looks like vs. the slide deck your MSP gives you."
+
+**Operational detail**: Explain what a roadmap looks like when it's built to overcome business challenges versus just pushing hardware refresh cycles.
+
+---
+
+### 17. "The Hidden Cost of Unlimited Support"
+
+**Hook**: "The hidden cost of 'unlimited support' in your MSP contract."
+
+**Operational detail**: Discuss service delivery economics. If they aren't capping hours, they are capping quality.
+
+---
+
+### 18. "Why Your MSP's QBR is a Waste of Time"
+
+**Hook**: "Why your MSP's QBR is a waste of time (and what to ask for instead)."
+
+**Operational detail**: Describe the QBR process redesign — focusing on business goals, technology enablement, and solving challenges instead of ticket volume reports.
+
+---
+
+### 19. "AI Readiness for SMBs"
+
+**Hook**: "AI readiness for SMBs: what to ask your IT provider before they sell you Copilot licenses."
+
+**Operational detail**: The assessment phase, security hardening requirements, and the difference between tools and workflow redesign.
+
+---
+
 ## Summary
 
 | # | Idea | Tier | Format | Key Source |
@@ -222,6 +266,11 @@ These have enough in the vault for a single strong post, no long-form article re
 | 12 | SOPs Without Owners | 2 | Standalone post | Systemization & SOPs |
 | 13 | AI = Ops Problem | 2 | Standalone post | Pompliano repurpose |
 | 14 | Evidence of Impact | 2 | Standalone post | Evidence of Impact note |
+| 15 | MSP Evaluation | 3 | Standalone post | MSP Buyer Lead Gen |
+| 16 | IT Roadmaps vs Decks | 3 | Standalone post | MSP Buyer Lead Gen |
+| 17 | Unlimited Support Cost | 3 | Standalone post | MSP Buyer Lead Gen |
+| 18 | Re-engineering the QBR | 3 | Standalone post | MSP Buyer Lead Gen |
+| 19 | AI Readiness for SMBs | 3 | Standalone post | MSP Buyer Lead Gen |
 
 ---
 
