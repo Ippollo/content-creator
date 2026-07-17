@@ -20,7 +20,7 @@ Evaluate one or more external content sources against your content pillars, posi
 Before starting, load these skills (do NOT scan directories, paths are fixed):
 
 1. `c:\HQ\content-creator\skills\content-scout\SKILL.md` — evaluation rubric and output template
-2. `c:\HQ\content-creator\voice\voice-guide.md` — voice fingerprint (for angle credibility assessment)
+2. `c:\HQ\KB\40_Knowledge\voice-guide.md` — voice fingerprint (for angle credibility assessment)
 
 For YouTube sources, also load:
 3. The global `youtube-review` skill — for transcript extraction

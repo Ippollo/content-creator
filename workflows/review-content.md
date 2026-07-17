@@ -19,7 +19,7 @@ Scores a draft against the canonical rubric for its content type. Review-only �
 
 Before scoring, ensure you are in the root of your `content-creator` repository. All paths listed below are relative to the repository root. Silently load:
 
-1. **Voice guide**: `voice/voice-guide.md` — fingerprint, anti-patterns, content-type lenses, signature moves
+1. **Voice guide**: `c:\HQ\KB\40_Knowledge\voice-guide.md` — fingerprint, anti-patterns, content-type lenses, signature moves
 2. **Rubric**: Load the rubric matching the content type (see Rubric Selection below)
 3. **Strategy file** (content-type-specific):
    - Articles & Case Studies: `strategy/seo-guidelines.md`
