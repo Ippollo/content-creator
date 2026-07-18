@@ -3,7 +3,7 @@
 > Conforms to the **KB Access Contract** (Option A), same as the other HQ plugins. See
 > `hq-cortex`'s `config.md` and the migration's `kb-access-contract.md` for the full schema.
 
-- **Vault Path** (`vault_root`): c:\HQ\KB
+- **Vault Path** (`vault_root`): C:\Projects\KB
 - **Access Method** (`access_method`): filesystem  <!-- future: kb-mcp (Option B) -->
 
 > **`{vault_root}` token.** Commands/skills refer to the vault as `{vault_root}` (e.g.
