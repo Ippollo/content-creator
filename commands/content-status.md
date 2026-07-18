@@ -1,6 +1,6 @@
 ---
 description: Show content pipeline status across articles, LinkedIn posts, editorial calendar, and scouted sources. Read-only scan — no files modified.
-quick_summary: "Scan content-creator directories and produce a pipeline snapshot with recommended next actions."
+disable-model-invocation: true
 ---
 
 # /content-status — Content Pipeline Visibility
@@ -20,8 +20,8 @@ Scan the content-creator directory tree and produce a structured pipeline snapsh
 
 Before starting, read:
 
-1. The current editorial calendar (e.g., `c:\HQ\content-creator\editorial-calendar-{month}-{year}.md`)
-2. `c:\HQ\content-creator\strategy\pillars.md` — for pillar context when recommending actions
+1. The current editorial calendar (e.g., `{plugin_root}\editorial-calendar-{month}-{year}.md`)
+2. `{plugin_root}\strategy\pillars.md` — for pillar context when recommending actions
 
 ## Steps
 
@@ -29,7 +29,7 @@ Before starting, read:
 
 ### 1. Scan Article Pipeline
 
-Read all files in `c:\HQ\content-creator\articles\drafts\` and `c:\HQ\content-creator\articles\published\`.
+Read all files in `{plugin_root}\articles\drafts\` and `{plugin_root}\articles\published\`.
 
 For each article, extract from frontmatter:
 - `slug`
@@ -54,7 +54,7 @@ For each article, extract from frontmatter:
 
 ### 2. Scan LinkedIn Pipeline
 
-Read all files in `c:\HQ\content-creator\linkedin\drafts\` and `c:\HQ\content-creator\linkedin\published\`.
+Read all files in `{plugin_root}\linkedin\drafts\` and `{plugin_root}\linkedin\published\`.
 
 For each LinkedIn draft, extract from frontmatter:
 - `slug`
@@ -81,7 +81,7 @@ Parse the current month's editorial calendar tables. For each week:
 
 ### 4. Scan Scouted Sources
 
-Count files in `c:\HQ\content-creator\sources\` (excluding README.md).
+Count files in `{plugin_root}\sources\` (excluding README.md).
 List each source slug. These are bookmarked — not in active production.
 
 ### 5. Compute Velocity (lightweight)

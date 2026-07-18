@@ -1,8 +1,6 @@
 ---
 description: Evaluate external content (articles, videos, podcasts, posts) for content creation potential. Use when reviewing a URL or pasted content to decide if it's worth writing about.
-quick_summary: "Ingest external source, score against pillars and prior art, produce Scout Report with proposed angles."
-requires_mcp: []
-recommends_mcp: [firecrawl-mcp]
+disable-model-invocation: true
 ---
 
 # /scout — External Content Evaluation
@@ -19,8 +17,8 @@ Evaluate one or more external content sources against your content pillars, posi
 
 Before starting, load these skills (do NOT scan directories, paths are fixed):
 
-1. `c:\HQ\content-creator\skills\content-scout\SKILL.md` — evaluation rubric and output template
-2. `c:\HQ\KB\40_Knowledge\voice-guide.md` — voice fingerprint (for angle credibility assessment)
+1. `{plugin_root}\skills\content-scout\SKILL.md` — evaluation rubric and output template
+2. `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint (for angle credibility assessment)
 
 For YouTube sources, also load:
 3. The global `youtube-review` skill — for transcript extraction
@@ -133,7 +131,7 @@ Based on the user's decision:
 - **🟢 Write (long-form)**: Suggest running `/write-article` with the proposed angle and source as input
 - **🟢 Write (short-form)**: Invoke `linkedin-writer` with the proposed angle
 - **🟢 Write (update)**: Open the existing article and suggest specific additions with citations from the source
-- **🟡 Bookmark**: Save the Scout Report to `c:\HQ\content-creator\sources\[slug].md` with YAML frontmatter:
+- **🟡 Bookmark**: Save the Scout Report to `{plugin_root}\sources\[slug].md` with YAML frontmatter:
 
 ```yaml
 ---

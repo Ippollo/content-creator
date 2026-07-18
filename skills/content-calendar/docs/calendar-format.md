@@ -1,6 +1,6 @@
 # Calendar File Format
 
-The editorial calendar lives at `c:\HQ\content-creator\editorial-calendar.md`.
+The editorial calendar lives at `{plugin_root}\editorial-calendar.md`.
 
 ## Structure
 

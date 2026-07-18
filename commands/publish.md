@@ -1,5 +1,6 @@
 ---
 description: Batch schedule approved posts to Buffer.
+disable-model-invocation: true
 ---
 
 # /publish — Schedule to Buffer

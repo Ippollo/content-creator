@@ -1,0 +1,10 @@
+{
+  "name": "hq-content",
+  "description": "Content toolkit: write and atomize articles, LinkedIn and X posts, case studies; scout topics; review against the voice guide. Reads voice/house-style from the KB vault (config.md).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Chris Ippolito"
+  },
+  "license": "MIT",
+  "keywords": ["content", "writing", "linkedin", "blog", "ghostwriting"]
+}

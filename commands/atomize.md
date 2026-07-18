@@ -1,5 +1,6 @@
 ---
 description: Atomize content into LinkedIn posts.
+disable-model-invocation: true
 ---
 
 # /atomize — Content Atomization Workflow
@@ -10,13 +11,13 @@ Break a long-form piece (blog article or case study) into standalone LinkedIn po
 
 Before starting, read these files (do NOT scan directories, paths are fixed):
 
-1. `c:\HQ\content-creator\skills\content-multiplier\SKILL.md` — orchestration logic and angle identification
-2. `c:\HQ\content-creator\skills\linkedin-writer\SKILL.md` — post writing rules and Atomize Mode
-3. `c:\HQ\content-creator\skills\content-reviewer\SKILL.md` — scoring protocol and rubrics
-4. `c:\HQ\KB\40_Knowledge\voice-guide.md` — voice fingerprint
-5. `c:\HQ\content-creator\strategy\pillar.md` — content pillars and positioning
-6. `c:\HQ\content-creator\strategy\algorithm.md` — LinkedIn algorithm rules
-7. 2-3 relevant examples from `c:\HQ\content-creator\swipe-file\linkedin\` — for hook/structure patterns
+1. `{plugin_root}\skills\content-multiplier\SKILL.md` — orchestration logic and angle identification
+2. `{plugin_root}\skills\linkedin-writer\SKILL.md` — post writing rules and Atomize Mode
+3. `{plugin_root}\skills\content-reviewer\SKILL.md` — scoring protocol and rubrics
+4. `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+5. `{plugin_root}\strategy\pillar.md` — content pillars and positioning
+6. `{plugin_root}\strategy\algorithm.md` — LinkedIn algorithm rules
+7. 2-3 relevant examples from `{plugin_root}\swipe-file\linkedin\` — for hook/structure patterns
 
 ## Input
 
@@ -66,7 +67,7 @@ For each approved atom, invoke **`linkedin-writer` in Atomize Mode**:
 - Follow all voice, structure, and algo rules
 - Apply **cascading list pattern** to any bullet/emoji lists (logical order first; rewrite items to achieve the visual slope if needed)
 - Generate a **first-comment** with a `[LINK]` placeholder that teases the source content from this post's specific angle
-- Save each draft to `c:\HQ\content-creator\linkedin\drafts\YYYY-MM-DD-[slug].md`
+- Save each draft to `{plugin_root}\linkedin\drafts\YYYY-MM-DD-[slug].md`
 - Include `first_comment` in the YAML frontmatter
 
 ### 4. Review Posts
@@ -110,7 +111,7 @@ Present all posts to the user with:
 
 When complete, the user will have:
 
-- 1-3 LinkedIn post drafts in `c:\HQ\content-creator\linkedin\drafts\`
+- 1-3 LinkedIn post drafts in `{plugin_root}\linkedin\drafts\`
 - Each post with a `first_comment` in frontmatter containing a `[LINK]` placeholder
 - Source article frontmatter updated with atom cross-references
 - Review scores for each post

@@ -1,5 +1,6 @@
 ---
 description: Write a case study from real project experience.
+disable-model-invocation: true
 ---
 
 # /write-case-study — Case Study Origination
@@ -19,10 +20,10 @@ Orchestrates the full case study pipeline: intake → confidentiality → SCAR o
 
 Before starting, silently load:
 
-1. `c:\HQ\content-creator\skills\case-study-writer\SKILL.md` — intake, SCAR workflow, and review protocol
-2. `c:\HQ\content-creator\skills\content-reviewer\SKILL.md` — scoring and rewrite protocol
-3. `c:\HQ\KB\40_Knowledge\voice-guide.md` — voice fingerprint
-4. `c:\HQ\content-creator\strategy\pillars.md` — content pillars and positioning
+1. `{plugin_root}\skills\case-study-writer\SKILL.md` — intake, SCAR workflow, and review protocol
+2. `{plugin_root}\skills\content-reviewer\SKILL.md` — scoring and rewrite protocol
+3. `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+4. `{plugin_root}\strategy\pillars.md` — content pillars and positioning
 
 ## Input
 
@@ -60,7 +61,7 @@ Follow the `case-study-writer` skill workflow end to end:
 On user approval, save to:
 
 ```
-c:\HQ\content-creator\case-studies\drafts\YYYY-MM-DD-[slug].md
+{plugin_root}\case-studies\drafts\YYYY-MM-DD-[slug].md
 ```
 
 Use full YAML frontmatter per `case-study-writer` skill reference doc.

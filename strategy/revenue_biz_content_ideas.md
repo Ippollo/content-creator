@@ -8,7 +8,7 @@ ai_client: antigravity
 
 # Revenue & Biz Content Ideas
 
-> Pillar 3 content mined from `c:\HQ\KB`, past conversations, and consulting notes. Each idea follows the **framing rule**: every Revenue & Biz post must include at least one operational detail — not just a business outcome.
+> Pillar 3 content mined from `{vault_root}`, past conversations, and consulting notes. Each idea follows the **framing rule**: every Revenue & Biz post must include at least one operational detail — not just a business outcome.
 
 ---
 

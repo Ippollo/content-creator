@@ -1,5 +1,6 @@
 ---
 description: Grab today's first-comment from the editorial calendar and display it for copying. Use daily when a scheduled post goes live on LinkedIn.
+disable-model-invocation: true
 ---
 
 # /comment — First-Comment Grab
