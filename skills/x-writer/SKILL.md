@@ -65,8 +65,8 @@ If someone clicks your profile after seeing your post, that's a positive signal 
 
 Before using this skill, read:
 
-1. **Voice profile**: `../../voice/voice-guide.md` — the user's writing fingerprint (tune for X: shorter sentences, fragments OK)
-2. **Content strategy**: `../../strategy/pillars.md` — niche, topic clusters, positioning
+1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md` — the user's writing fingerprint (tune for X: shorter sentences, fragments OK)
+2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — niche, topic clusters, positioning
 3. **Swipe file**: `../../swipe-file/x/` — curated examples of X posts they admire
 4. **Algorithm guidelines**: `../../strategy/x-algorithm.md` — current X algo rules (71-280 chars, replies/bookmarks priority)
 
@@ -76,8 +76,8 @@ Before using this skill, read:
 
 <!-- Read at this step: voice-guide.md, pillars.md, x-algorithm.md -->
 
-- Read `../../voice/voice-guide.md` for tone, sentence patterns, and vocabulary
-- Read `../../strategy/pillars.md` for niche alignment
+- Read `{vault_root}\40_Knowledge\voice-guide.md` for tone, sentence patterns, and vocabulary
+- Read `{vault_root}\40_Knowledge\content-pillars.md` for niche alignment
 - Read `../../strategy/x-algorithm.md` for constraints and mechanics
 
 ### 2. Analyze Swipe Patterns

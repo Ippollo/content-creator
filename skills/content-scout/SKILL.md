@@ -87,7 +87,7 @@ The `/scout` workflow handles ingestion and normalization. By the time this skil
 
 <!-- Read at this step: pillars.md, then scan article/draft/calendar frontmatter -->
 
-1. Read `../../strategy/pillars.md` — pillar definitions, positioning, content mix rules
+1. Read `{vault_root}\40_Knowledge\content-pillars.md` — pillar definitions, positioning, content mix rules
 2. Scan `../../articles/published/` — read filenames and YAML frontmatter (`title`, `slug`, `pillar`, `target_keyword`)
 3. Scan `../../articles/drafts/` — same frontmatter scan
 4. Read the current editorial calendar (`../../editorial-calendar-{current-month}-{year}.md`)

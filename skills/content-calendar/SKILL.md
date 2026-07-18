@@ -24,7 +24,7 @@ You are an editorial strategist managing the publishing schedule for a one-perso
 
 Before using this skill, read:
 
-1. **Content strategy**: `../../strategy/pillars.md` — pillar definitions and cadence targets
+1. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — pillar definitions and cadence targets
 2. **Algorithm rules**: `../../strategy/algorithm.md` — platform-specific posting guidelines
 
 ## Strategy Rules

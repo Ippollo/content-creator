@@ -32,8 +32,8 @@ These are the most common mistakes when writing LinkedIn posts. Violating any of
 
 Before using this skill, read:
 
-1. **Voice profile**: `../../voice/voice-guide.md` — the user's writing fingerprint
-2. **Content strategy**: `../../strategy/pillars.md` — niche, topic clusters, positioning
+1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md` — the user's writing fingerprint
+2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — niche, topic clusters, positioning
 3. **Swipe file**: `../../swipe-file/linkedin/` — curated examples of LinkedIn posts they admire
 4. **Algorithm guidelines**: `../../strategy/algorithm.md` — current LinkedIn algo rules for post formatting and engagement
 
@@ -43,8 +43,8 @@ Before using this skill, read:
 
 <!-- Read at this step: voice-guide.md, pillars.md, algorithm.md -->
 
-- Read `../../voice/voice-guide.md` for tone, sentence patterns, and vocabulary
-- Read `../../strategy/pillars.md` for niche alignment and topic clusters
+- Read `{vault_root}\40_Knowledge\voice-guide.md` for tone, sentence patterns, and vocabulary
+- Read `{vault_root}\40_Knowledge\content-pillars.md` for niche alignment and topic clusters
 - Read `../../strategy/algorithm.md` for current formatting, engagement, and CTA rules
 
 ### 2. Analyze Swipe Patterns

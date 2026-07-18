@@ -34,8 +34,8 @@ These are the most common mistakes when writing long-form articles. Violating an
 
 Read before writing:
 
-1. **Voice profile**: `../../voice/voice-guide.md`
-2. **Content strategy**: `../../strategy/pillars.md`
+1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md`
+2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md`
 3. **SEO guidelines**: `../../strategy/seo-guidelines.md`
 4. **Blog swipe file**: `../../swipe-file/blog/`
 5. **Reference doc**: `docs/reference.md` — archetypes, rules, search intent types
