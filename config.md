@@ -43,6 +43,7 @@ these via tokens and never hardcodes an absolute path.
   sources\
   drafts\{articles,linkedin,x,case-studies}\
   published\{articles,linkedin,case-studies}\
+  assets\                        images and other media
 ```
 
 Run `content-setup` on first use to scaffold this tree and copy the seed templates in.
