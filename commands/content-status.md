@@ -20,8 +20,8 @@ Scan the content-creator directory tree and produce a structured pipeline snapsh
 
 Before starting, read:
 
-1. The current editorial calendar (e.g., `{plugin_root}\editorial-calendar-{month}-{year}.md`)
-2. `{plugin_root}\strategy\pillars.md` — for pillar context when recommending actions
+1. The current editorial calendar (e.g., `{content_root}\calendar\editorial-calendar-{month}-{year}.md`)
+2. `{content_root}\strategy\pillars.md` — for pillar context when recommending actions
 
 ## Steps
 
@@ -29,7 +29,7 @@ Before starting, read:
 
 ### 1. Scan Article Pipeline
 
-Read all files in `{plugin_root}\articles\drafts\` and `{plugin_root}\articles\published\`.
+Read all files in `{content_root}\drafts\articles\` and `{content_root}\published\articles\`.
 
 For each article, extract from frontmatter:
 - `slug`
@@ -54,7 +54,7 @@ For each article, extract from frontmatter:
 
 ### 2. Scan LinkedIn Pipeline
 
-Read all files in `{plugin_root}\linkedin\drafts\` and `{plugin_root}\linkedin\published\`.
+Read all files in `{content_root}\drafts\linkedin\` and `{content_root}\published\linkedin\`.
 
 For each LinkedIn draft, extract from frontmatter:
 - `slug`
@@ -81,7 +81,7 @@ Parse the current month's editorial calendar tables. For each week:
 
 ### 4. Scan Scouted Sources
 
-Count files in `{plugin_root}\sources\` (excluding README.md).
+Count files in `{content_root}\sources\` (excluding README.md).
 List each source slug. These are bookmarked — not in active production.
 
 ### 5. Compute Velocity (lightweight)

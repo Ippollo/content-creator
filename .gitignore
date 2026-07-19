@@ -1,40 +1,32 @@
-# Environment variables (secrets)
+# Secrets & deps
 .env
-
-# Node
 node_modules/
-
-# Binary/third-party files
 *.pdf
 
-# Personal content (share the system, not the output)
-articles/drafts/
-articles/published/
-articles/images/
-linkedin/drafts/
-linkedin/published/
-case-studies/drafts/
-case-studies/published/
-case-studies/sources/
-case-studies/images/
-x/drafts/
+# --- Content data now lives in {content_root} (outside this repo), never here. ---
+# Ignored defensively so an accidental local write is never committed to the package.
+articles/
+linkedin/
+x/
+case-studies/
+sources/
+calendar/
+swipe-file/*/
 editorial-calendar*.md
-LinkedIn 360Brew Deep-Dive Report.md
-voice/voice-guide.md
 strategy/pillars.md
-
-# Archived calendars and content
+strategy/personal-story-ideas.md
+strategy/revenue-biz-ideas.md
+voice/
 archive/
+LinkedIn 360Brew Deep-Dive Report.md
+*.xlsx
 
-# Site-specific skills (hardcoded to personal website)
+# Site-specific skills (hardcoded to a personal website) — excluded from the package by design
 skills/website-copywriter/
 skills/schema-markup/
 skills/seo-audit/
 skills/page-cro/
 skills/site-architecture/
-
-# Personal swipe file examples
-swipe-file/linkedin/[0-9]*.md
 
 # Buffer script (references personal channel IDs)
 scripts/buffer-publish.js

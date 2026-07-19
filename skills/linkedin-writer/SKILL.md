@@ -28,14 +28,23 @@ These are the most common mistakes when writing LinkedIn posts. Violating any of
 
 ---
 
+## First-Run Check
+
+Before doing anything else, confirm the content workspace exists on this machine:
+
+- `{content_root}\strategy\pillars.md` — content pillars
+- `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+
+If either is missing, the plugin has not been set up here yet. **Invoke the `content-setup` skill** (or tell the user: *"Run setup first — just say 'set up the content plugin'."*). Never fabricate the user's voice or pillars from scratch.
+
 ## Prerequisites
 
 Before using this skill, read:
 
 1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md` — the user's writing fingerprint
-2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — niche, topic clusters, positioning
-3. **Swipe file**: `../../swipe-file/linkedin/` — curated examples of LinkedIn posts they admire
-4. **Algorithm guidelines**: `../../strategy/algorithm.md` — current LinkedIn algo rules for post formatting and engagement
+2. **Content strategy**: `{content_root}\strategy\pillars.md` — niche, topic clusters, positioning
+3. **Swipe file**: `{content_root}\swipe-file\linkedin\` — curated examples of LinkedIn posts they admire
+4. **Algorithm guidelines**: `{plugin_root}\knowledge\linkedin-algorithm.md` — current LinkedIn algo rules for post formatting and engagement
 
 ## Workflow
 
@@ -44,12 +53,12 @@ Before using this skill, read:
 <!-- Read at this step: voice-guide.md, pillars.md, algorithm.md -->
 
 - Read `{vault_root}\40_Knowledge\voice-guide.md` for tone, sentence patterns, and vocabulary
-- Read `{vault_root}\40_Knowledge\content-pillars.md` for niche alignment and topic clusters
-- Read `../../strategy/algorithm.md` for current formatting, engagement, and CTA rules
+- Read `{content_root}\strategy\pillars.md` for niche alignment and topic clusters
+- Read `{plugin_root}\knowledge\linkedin-algorithm.md` for current formatting, engagement, and CTA rules
 
 ### 2. Analyze Swipe Patterns
 
-<!-- Read at this step: 3–5 examples from ../../swipe-file/linkedin/ most relevant to the topic -->
+<!-- Read at this step: 3–5 examples from {content_root}\swipe-file\linkedin\ most relevant to the topic -->
 
 For each swipe example, identify:
 
@@ -218,7 +227,7 @@ In this mode:
 
 ## Saving Drafts
 
-When the user approves a post, save it to `../../drafts/` as a markdown file:
+When the user approves a post, save it to `{content_root}\drafts\linkedin\` as a markdown file:
 
 - Filename: `YYYY-MM-DD-[slug].md`
 - Include the archetype, cluster, and any notes as YAML frontmatter
@@ -229,7 +238,7 @@ Post lifecycle after saving:
 
 1. **Draft saved** → frontmatter has `status: draft`
 2. **User approves** → update frontmatter to `status: approved`
-3. **`/publish` runs** → pushes to Buffer, updates to `status: scheduled`, moves file to `../../published/`
+3. **`/publish` runs** → pushes to Buffer, updates to `status: scheduled`, moves file to `{content_root}\published\linkedin\`
 
 The `/publish` workflow handles step 3 automatically. This skill only handles saving drafts (step 1) and marking them approved when the user confirms the final version (step 2).
 

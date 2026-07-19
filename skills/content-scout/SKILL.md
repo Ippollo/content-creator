@@ -72,6 +72,15 @@ Apply these ceilings **after** initial scoring. If a condition is met, cap the d
 
 ---
 
+## First-Run Check
+
+Before doing anything else, confirm the content workspace exists on this machine:
+
+- `{content_root}\strategy\pillars.md` — content pillars
+- `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+
+If either is missing, the plugin has not been set up here yet. **Invoke the `content-setup` skill** (or tell the user: *"Run setup first — just say 'set up the content plugin'."*). Never fabricate the user's voice or pillars from scratch.
+
 ## Workflow
 
 ### Step 1: Receive Normalized Content
@@ -87,11 +96,11 @@ The `/scout` workflow handles ingestion and normalization. By the time this skil
 
 <!-- Read at this step: pillars.md, then scan article/draft/calendar frontmatter -->
 
-1. Read `{vault_root}\40_Knowledge\content-pillars.md` — pillar definitions, positioning, content mix rules
-2. Scan `../../articles/published/` — read filenames and YAML frontmatter (`title`, `slug`, `pillar`, `target_keyword`)
-3. Scan `../../articles/drafts/` — same frontmatter scan
-4. Read the current editorial calendar (`../../editorial-calendar-{current-month}-{year}.md`)
-5. Scan `../../linkedin/drafts/` — filenames and frontmatter for queued posts
+1. Read `{content_root}\strategy\pillars.md` — pillar definitions, positioning, content mix rules
+2. Scan `{content_root}\published\articles\` — read filenames and YAML frontmatter (`title`, `slug`, `pillar`, `target_keyword`)
+3. Scan `{content_root}\drafts\articles\` — same frontmatter scan
+4. Read the current editorial calendar (`{content_root}\calendar\editorial-calendar-{current-month}-{year}.md`)
+5. Scan `{content_root}\drafts\linkedin\` — filenames and frontmatter for queued posts
 
 Do NOT read the full body of every article. Frontmatter and filenames are sufficient for overlap detection. Only read the full body of a specific article if the frontmatter suggests significant overlap with the source being evaluated.
 

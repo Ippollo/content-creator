@@ -28,7 +28,7 @@ The reviewer must load these files before scoring:
 | File | What it provides |
 |---|---|
 | `voice/voice-guide.md` | Anti-pattern blacklist, article content-type lens (lines 42-57), signature moves, editorial process |
-| `strategy/seo-guidelines.md` | SEO checks: keyword placement rules, meta description spec, heading hierarchy, E-E-A-T signals |
+| `{plugin_root}\knowledge\seo-guidelines.md` | SEO checks: keyword placement rules, meta description spec, heading hierarchy, E-E-A-T signals |
 
 ---
 
@@ -104,7 +104,7 @@ Are claims anchored in named sources and personal proof points, or just asserted
 
 Will this article perform in search? Check mechanical placement and structural optimization.
 
-> **Source of truth**: `strategy/seo-guidelines.md` defines the detailed rules. This dimension scores compliance against those rules — it does not restate them. Load the file before scoring.
+> **Source of truth**: `{plugin_root}\knowledge\seo-guidelines.md` defines the detailed rules. This dimension scores compliance against those rules — it does not restate them. Load the file before scoring.
 
 **Specific checks** (from seo-guidelines.md):
 - **Target keyword**: Present in title, first 100 words, at least 2 H2s, and the conclusion

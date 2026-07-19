@@ -24,7 +24,7 @@ You are a content strategist and orchestrator. Your job is to maximize the reach
 Before using this skill, read:
 
 1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md` — for consistency across formats
-2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — to ensure atoms stay on-pillar
+2. **Content strategy**: `{content_root}\strategy\pillars.md` — to ensure atoms stay on-pillar
 
 ## Flows
 
@@ -81,7 +81,7 @@ After atoms are created, update the source article's frontmatter `atoms` field w
 ```yaml
 atoms:
   - platform: linkedin
-    file: "../../published/YYYY-MM-DD-slug.md"
+    file: "{content_root}\published\linkedin\YYYY-MM-DD-slug.md"
     angle: "Brief description of the angle"
 ```
 
@@ -137,7 +137,7 @@ Invoke `blog-writer` with:
 After the article is saved, add a note to the original post's frontmatter:
 
 ```yaml
-expanded_to: "../../articles/drafts/YYYY-MM-DD-slug.md"
+expanded_to: "{content_root}\drafts\articles\YYYY-MM-DD-slug.md"
 ```
 
 ---

@@ -15,9 +15,9 @@ Before starting, read these files (do NOT scan directories, paths are fixed):
 2. `{plugin_root}\skills\linkedin-writer\SKILL.md` — post writing rules and Atomize Mode
 3. `{plugin_root}\skills\content-reviewer\SKILL.md` — scoring protocol and rubrics
 4. `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
-5. `{plugin_root}\strategy\pillar.md` — content pillars and positioning
-6. `{plugin_root}\strategy\algorithm.md` — LinkedIn algorithm rules
-7. 2-3 relevant examples from `{plugin_root}\swipe-file\linkedin\` — for hook/structure patterns
+5. `{content_root}\strategy\pillars.md` — content pillars and positioning
+6. `{plugin_root}\knowledge\linkedin-algorithm.md` — LinkedIn algorithm rules
+7. 2-3 relevant examples from `{content_root}\swipe-file\linkedin\` — for hook/structure patterns
 
 ## Input
 
@@ -67,7 +67,7 @@ For each approved atom, invoke **`linkedin-writer` in Atomize Mode**:
 - Follow all voice, structure, and algo rules
 - Apply **cascading list pattern** to any bullet/emoji lists (logical order first; rewrite items to achieve the visual slope if needed)
 - Generate a **first-comment** with a `[LINK]` placeholder that teases the source content from this post's specific angle
-- Save each draft to `{plugin_root}\linkedin\drafts\YYYY-MM-DD-[slug].md`
+- Save each draft to `{content_root}\drafts\linkedin\YYYY-MM-DD-[slug].md`
 - Include `first_comment` in the YAML frontmatter
 
 ### 4. Review Posts
@@ -95,7 +95,7 @@ After all posts are drafted and reviewed, update the source article/case study's
 ```yaml
 atoms:
   - platform: linkedin
-    file: "../../linkedin/drafts/YYYY-MM-DD-slug.md"
+    file: "{content_root}\drafts\linkedin\YYYY-MM-DD-slug.md"
     angle: "Brief description of the angle"
 ```
 
@@ -111,7 +111,7 @@ Present all posts to the user with:
 
 When complete, the user will have:
 
-- 1-3 LinkedIn post drafts in `{plugin_root}\linkedin\drafts\`
+- 1-3 LinkedIn post drafts in `{content_root}\drafts\linkedin\`
 - Each post with a `first_comment` in frontmatter containing a `[LINK]` placeholder
 - Source article frontmatter updated with atom cross-references
 - Review scores for each post

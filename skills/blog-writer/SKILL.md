@@ -30,14 +30,23 @@ These are the most common mistakes when writing long-form articles. Violating an
 
 ---
 
+## First-Run Check
+
+Before doing anything else, confirm the content workspace exists on this machine:
+
+- `{content_root}\strategy\pillars.md` — content pillars
+- `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+
+If either is missing, the plugin has not been set up here yet. **Invoke the `content-setup` skill** (or tell the user: *"Run setup first — just say 'set up the content plugin'."*). Never fabricate the user's voice or pillars from scratch.
+
 ## Prerequisites
 
 Read before writing:
 
 1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md`
-2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md`
-3. **SEO guidelines**: `../../strategy/seo-guidelines.md`
-4. **Blog swipe file**: `../../swipe-file/blog/`
+2. **Content strategy**: `{content_root}\strategy\pillars.md`
+3. **SEO guidelines**: `{plugin_root}\knowledge\seo-guidelines.md`
+4. **Blog swipe file**: `{content_root}\swipe-file\blog\`
 5. **Reference doc**: `docs/reference.md` — archetypes, rules, search intent types
 
 ## Workflow
@@ -214,8 +223,8 @@ Common refinements: sharper intro, more/fewer sections, deeper on a specific sec
 
 ## Saving and Publishing
 
-- **Save drafts** to `../../articles/drafts/YYYY-MM-DD-[slug].md` with full frontmatter (see `docs/reference.md`)
-- **Publish**: On "I've published the article," move to `../../articles/published/`, update `status: published`, add `published_date`. No confirmation needed.
+- **Save drafts** to `{content_root}\drafts\articles\YYYY-MM-DD-[slug].md` with full frontmatter (see `docs/reference.md`)
+- **Publish**: On "I've published the article," move to `{content_root}\published\articles\`, update `status: published`, add `published_date`. No confirmation needed.
 
 ## Related Skills
 

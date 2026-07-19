@@ -28,7 +28,7 @@ The reviewer must load these files before scoring:
 | File | What it provides |
 |---|---|
 | `voice/voice-guide.md` | Anti-pattern blacklist, case study content-type lens (lines 62-76), case study checklist (lines 283-287), signature moves (especially Constraint-First Frame, Bridge and Burn, Operator's Confession) |
-| `strategy/seo-guidelines.md` | SEO checks: keyword placement rules, meta description spec, heading hierarchy, E-E-A-T signals |
+| `{plugin_root}\knowledge\seo-guidelines.md` | SEO checks: keyword placement rules, meta description spec, heading hierarchy, E-E-A-T signals |
 
 ---
 
@@ -106,7 +106,7 @@ Case study evidence is different from article evidence. Articles need named rese
 
 Will this case study perform in search? Same mechanical checks as articles — case studies are published to the blog.
 
-> **Source of truth**: `strategy/seo-guidelines.md` defines the detailed rules. This dimension scores compliance against those rules.
+> **Source of truth**: `{plugin_root}\knowledge\seo-guidelines.md` defines the detailed rules. This dimension scores compliance against those rules.
 
 **Specific checks** (from seo-guidelines.md):
 - **Target keyword**: Present in title, first 100 words, at least 2 H2s, and the conclusion

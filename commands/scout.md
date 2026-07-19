@@ -131,7 +131,7 @@ Based on the user's decision:
 - **🟢 Write (long-form)**: Suggest running `/write-article` with the proposed angle and source as input
 - **🟢 Write (short-form)**: Invoke `linkedin-writer` with the proposed angle
 - **🟢 Write (update)**: Open the existing article and suggest specific additions with citations from the source
-- **🟡 Bookmark**: Save the Scout Report to `{plugin_root}\sources\[slug].md` with YAML frontmatter:
+- **🟡 Bookmark**: Save the Scout Report to `{content_root}\sources\[slug].md` with YAML frontmatter:
 
 ```yaml
 ---

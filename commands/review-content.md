@@ -23,8 +23,8 @@ Before scoring, ensure you are in the root of your `content-creator` repository.
 1. **Voice guide**: `{vault_root}\40_Knowledge\voice-guide.md` — fingerprint, anti-patterns, content-type lenses, signature moves
 2. **Rubric**: Load the rubric matching the content type (see Rubric Selection below)
 3. **Strategy file** (content-type-specific):
-   - Articles & Case Studies: `strategy/seo-guidelines.md`
-   - LinkedIn posts: `strategy/algorithm.md`
+   - Articles & Case Studies: `{plugin_root}\knowledge\seo-guidelines.md`
+   - LinkedIn posts: `{plugin_root}\knowledge\linkedin-algorithm.md`
 
 ## Rubric Selection
 

@@ -29,7 +29,7 @@ These are the most common mistakes when writing X posts. Violating any of these 
 
 ## Algorithm-Informed Patterns
 
-Derived from the [open-source X recommendation algorithm](https://github.com/xai-org/x-algorithm). Full reference: `../../strategy/x-algorithm.md`.
+Derived from the [open-source X recommendation algorithm](https://github.com/xai-org/x-algorithm). Full reference: `{plugin_root}\knowledge\x-algorithm.md`.
 
 The Phoenix scoring model predicts 19 engagement actions and combines them into a weighted score. These patterns optimize for the highest-impact signals.
 
@@ -61,14 +61,23 @@ If someone clicks your profile after seeing your post, that's a positive signal 
 
 ---
 
+## First-Run Check
+
+Before doing anything else, confirm the content workspace exists on this machine:
+
+- `{content_root}\strategy\pillars.md` — content pillars
+- `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+
+If either is missing, the plugin has not been set up here yet. **Invoke the `content-setup` skill** (or tell the user: *"Run setup first — just say 'set up the content plugin'."*). Never fabricate the user's voice or pillars from scratch.
+
 ## Prerequisites
 
 Before using this skill, read:
 
 1. **Voice profile**: `{vault_root}\40_Knowledge\voice-guide.md` — the user's writing fingerprint (tune for X: shorter sentences, fragments OK)
-2. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — niche, topic clusters, positioning
-3. **Swipe file**: `../../swipe-file/x/` — curated examples of X posts they admire
-4. **Algorithm guidelines**: `../../strategy/x-algorithm.md` — current X algo rules (71-280 chars, replies/bookmarks priority)
+2. **Content strategy**: `{content_root}\strategy\pillars.md` — niche, topic clusters, positioning
+3. **Swipe file**: `{content_root}\swipe-file\x\` — curated examples of X posts they admire
+4. **Algorithm guidelines**: `{plugin_root}\knowledge\x-algorithm.md` — current X algo rules (71-280 chars, replies/bookmarks priority)
 
 ## Workflow
 
@@ -77,12 +86,12 @@ Before using this skill, read:
 <!-- Read at this step: voice-guide.md, pillars.md, x-algorithm.md -->
 
 - Read `{vault_root}\40_Knowledge\voice-guide.md` for tone, sentence patterns, and vocabulary
-- Read `{vault_root}\40_Knowledge\content-pillars.md` for niche alignment
-- Read `../../strategy/x-algorithm.md` for constraints and mechanics
+- Read `{content_root}\strategy\pillars.md` for niche alignment
+- Read `{plugin_root}\knowledge\x-algorithm.md` for constraints and mechanics
 
 ### 2. Analyze Swipe Patterns
 
-<!-- Read at this step: 2-3 examples from ../../swipe-file/x/ most relevant to the requested format -->
+<!-- Read at this step: 2-3 examples from {content_root}\swipe-file\x\ most relevant to the requested format -->
 
 For each swipe example, identify:
 
@@ -163,7 +172,7 @@ Include Persona Summary and Review Notes below. Wait for user approval.
 
 ### 8. Save
 
-On approval, save to `../../x/drafts/YYYY-MM-DD-[slug].md` with frontmatter:
+On approval, save to `{content_root}\drafts\x\YYYY-MM-DD-[slug].md` with frontmatter:
 ```yaml
 ---
 date: YYYY-MM-DD

@@ -23,9 +23,9 @@ Before starting, silently load:
 1. `{plugin_root}\skills\blog-writer\SKILL.md` — writing workflow and rules
 2. `{plugin_root}\skills\content-reviewer\SKILL.md` — scoring and rewrite protocol
 3. `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
-4. `{plugin_root}\strategy\pillars.md` — content pillars and positioning
-5. `{plugin_root}\strategy\seo-guidelines.md` — SEO rules
-6. 2–3 examples from `{plugin_root}\swipe-file\blog\` — hook and structure patterns
+4. `{content_root}\strategy\pillars.md` — content pillars and positioning
+5. `{plugin_root}\knowledge\seo-guidelines.md` — SEO rules
+6. 2–3 examples from `{content_root}\swipe-file\blog\` — hook and structure patterns
 
 ## Input
 
@@ -56,7 +56,7 @@ Follow the `blog-writer` skill workflow end to end:
 1. **Research and Angle** — identify search intent, target keyword, reader outcome, archetype
 2. **Outline** — present H2 skeleton for user approval before drafting
 3. **Draft** — write the full article (1,500–2,500 words)
-4. **Save draft to disk immediately.** Write the draft to `{plugin_root}\articles\drafts\YYYY-MM-DD-[slug].md` before running the self-review. This ensures the draft survives model switches, conversation timeouts, or review-pass failures. If the user plans a two-model workflow (e.g., Pro drafts, Opus polishes), this is the handoff point.
+4. **Save draft to disk immediately.** Write the draft to `{content_root}\drafts\articles\YYYY-MM-DD-[slug].md` before running the self-review. This ensures the draft survives model switches, conversation timeouts, or review-pass failures. If the user plans a two-model workflow (e.g., Pro drafts, Opus polishes), this is the handoff point.
 5. **Self-Review** — run through `content-reviewer` (Voice, Structure, SEO rubrics; quality bar: 9/10; max 3 passes). **Self-review is not optional.** The `content-reviewer` protocol must be executed with actual scoring. Claiming a score without running the rubrics is a workflow violation.
 6. **Present** — show final article with score and review notes
 
@@ -65,7 +65,7 @@ Follow the `blog-writer` skill workflow end to end:
 On user approval, save to:
 
 ```
-{plugin_root}\articles\drafts\YYYY-MM-DD-[slug].md
+{content_root}\drafts\articles\YYYY-MM-DD-[slug].md
 ```
 
 Use full YAML frontmatter per `blog-writer` skill reference doc.

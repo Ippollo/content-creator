@@ -28,7 +28,7 @@ The reviewer must load these files before scoring:
 | File | What it provides |
 |---|---|
 | `voice/voice-guide.md` | Anti-pattern blacklist, LinkedIn content-type lens (lines 25-38), signature moves (especially Pattern Interrupt, Before/After) |
-| `strategy/algorithm.md` | Algorithm dimension checks: suppressed patterns, engagement signals, format guidelines, banned formats |
+| `{plugin_root}\knowledge\linkedin-algorithm.md` | Algorithm dimension checks: suppressed patterns, engagement signals, format guidelines, banned formats |
 
 ---
 
@@ -86,7 +86,7 @@ Does the post stop the scroll, deliver one idea, and land the ending?
 
 Will LinkedIn's algorithm distribute this post? Check against suppressed patterns and format guidelines.
 
-> **Source of truth**: `strategy/algorithm.md` defines the detailed rules. This dimension scores compliance against those rules — it does not restate them. Load the file before scoring.
+> **Source of truth**: `{plugin_root}\knowledge\linkedin-algorithm.md` defines the detailed rules. This dimension scores compliance against those rules — it does not restate them. Load the file before scoring.
 
 **Specific checks** (from algorithm.md):
 

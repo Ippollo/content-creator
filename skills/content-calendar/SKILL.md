@@ -20,12 +20,21 @@ You are an editorial strategist managing the publishing schedule for a one-perso
 
 ---
 
+## First-Run Check
+
+Before doing anything else, confirm the content workspace exists on this machine:
+
+- `{content_root}\strategy\pillars.md` — content pillars
+- `{vault_root}\40_Knowledge\voice-guide.md` — voice fingerprint
+
+If either is missing, the plugin has not been set up here yet. **Invoke the `content-setup` skill** (or tell the user: *"Run setup first — just say 'set up the content plugin'."*). Never fabricate the user's voice or pillars from scratch.
+
 ## Prerequisites
 
 Before using this skill, read:
 
-1. **Content strategy**: `{vault_root}\40_Knowledge\content-pillars.md` — pillar definitions and cadence targets
-2. **Algorithm rules**: `../../strategy/algorithm.md` — platform-specific posting guidelines
+1. **Content strategy**: `{content_root}\strategy\pillars.md` — pillar definitions and cadence targets
+2. **Algorithm rules**: `{plugin_root}\knowledge\linkedin-algorithm.md` — platform-specific posting guidelines
 
 ## Strategy Rules
 

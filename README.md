@@ -1,150 +1,85 @@
 # Content Creator
 
-Agent-powered content multiplier system. Write once, publish everywhere.
+Agent-powered content multiplier. Write once, publish everywhere — on your own voice.
 
-## How It Works
-
-Start with a **pillar article** (long-form SEO blog post), then **atomize** it into shorter platform-specific posts. Or go the other direction — expand a strong LinkedIn post into a full article. **Case studies** follow the same multiplier model: write the case study, then atomize the strongest angles into LinkedIn posts.
+Start with a **pillar article** (long-form SEO blog post), then **atomize** it into shorter
+platform-specific posts. Or go the other direction — expand a strong LinkedIn post into a full
+article. **Case studies** follow the same model.
 
 ```
 Blog Article (pillar) ──→ LinkedIn Post 1 (atom)
                       ──→ LinkedIn Post 2 (atom)
-                      ──→ Future Platforms
-
-Case Study ──→ LinkedIn Post 1 (atom)
-           ──→ LinkedIn Post 2 (atom)
-
-LinkedIn Post ──→ Blog Article (expand)
+Case Study ──────────────→ LinkedIn Post(s) (atom)
+LinkedIn Post ───────────→ Blog Article (expand)
 ```
 
-## Structure
+## Install & set up
+
+1. Install the plugin (from a marketplace, or add the `.plugin` package in your client).
+2. Run setup — just ask: **"set up the content plugin"** (the `content-setup` skill). It will:
+   - ask where your content should live (defaults to `<your-vault>\Content`),
+   - scaffold the folder layout,
+   - copy the seed templates in,
+   - interview you to build your **voice guide**, and
+   - fill in `config.md` for you.
+3. Start writing: *"Write a LinkedIn post about …"* / *"Write a blog post about …"*.
+
+You can also edit `config.md` by hand — it holds just two paths (`vault_root`, `content_root`).
+See [config.md](config.md) for the full contract.
+
+## Where things live
+
+**In the plugin package** (read-only, ships to everyone, replaced on update):
 
 ```
-skills/
-  blog-writer/           — Long-form SEO blog articles (argument architecture, checklist gate, persona review)
-  linkedin-writer/       — LinkedIn posts (standalone or atomized)
-  case-study-writer/     — Case studies from real project experience (SCAR framework, persona review)
-  x-writer/              — X/Twitter posts (build-in-public, algorithm-informed)
-  content-multiplier/    — Orchestrates atomize/expand flows
-  content-reviewer/      — Platform-agnostic quality scoring (long-form editorial checks)
-  content-scout/         — Evaluate external sources for content potential (rubric-based)
-    rubrics/
-      article.md         — Article scoring rubric (Voice, Structure, Evidence, SEO, Editorial)
-      case-study.md      — Case study scoring rubric (SCAR structure, operational evidence, persona tests)
-      linkedin.md        — LinkedIn scoring rubric (Algorithm, Specificity replace SEO, Evidence)
-  content-calendar/      — Editorial calendar, scheduling, pillar balance
-
-strategy/
-  pillars.md             — Niche, topic clusters, positioning
-  algorithm.md           — LinkedIn algorithm rules
-  x-algorithm.md         — X algorithm rules (from open-source code)
-  seo-guidelines.md      — Blog SEO playbook
-
-voice/                   — Your voice fingerprint and writing style (multi-format)
-
-workflows/
-  scout.md               — Evaluate external content for content creation potential
-  write-article.md       — Full blog article pipeline (research → outline → draft → review)
-  write-case-study.md    — Case study pipeline (intake → SCAR outline → draft → review)
-  review-content.md      — Standalone review and scoring against canonical rubrics
-  atomize.md             — Break pillar content into platform-specific posts
-  publish.md             — Batch publish approved posts to Buffer
-  comment.md             — Grab today's first-comment from the editorial calendar
-  x-post.md              — Draft X posts for build-in-public updates
-
-swipe-file/
-  linkedin/              — Curated LinkedIn post examples
-  blog/                  — Curated blog article examples
-  case-studies/          — Curated case study examples
-  x/                     — Curated X post examples
-
-sources/                 — Bookmarked scout reports (external content flagged for later)
-
-editorial-calendar-{month}-{year}.md  — Monthly publishing schedule (managed by content-calendar)
-
-articles/
-  drafts/                — Blog article drafts
-  published/             — Published blog articles
-
-linkedin/
-  drafts/                — LinkedIn post drafts
-  published/             — Published LinkedIn posts
-
-x/
-  drafts/                — X post drafts
-
-case-studies/
-  sources/               — Raw project notes, briefs, evidence
-  drafts/                — Case study drafts
-  published/             — Published case studies
+skills/        the writers, reviewer, scout, calendar, multiplier, and content-setup
+commands/      slash commands (scout, write-article, atomize, publish, …)
+knowledge/     generic reference — linkedin-algorithm.md, x-algorithm.md, seo-guidelines.md
+templates/     seeds copied into your content folder at setup
 ```
+
+**In your content folder** (`{content_root}`, created and managed for you — *your* data):
+
+```
+strategy/pillars.md            content pillars (canonical)
+strategy/personal-story-ideas.md, revenue-biz-ideas.md
+swipe-file/{linkedin,blog,x,case-studies}/
+calendar/editorial-calendar-{month}-{year}.md   (+ archive/)
+sources/                       bookmarked scout reports
+drafts/{articles,linkedin,x,case-studies}/
+published/{articles,linkedin,case-studies}/
+```
+
+**In your vault** (`{vault_root}`, shared identity — read-only to this plugin):
+
+```
+40_Knowledge/voice-guide.md    your voice fingerprint
+99_System/house-style.md       publishable-content rules (checked before shipping)
+```
+
+> Prefer not to run a separate vault? Point `vault_root` and `content_root` at the same folder;
+> setup will offer to place `voice-guide.md` / `house-style.md` at its root.
 
 ## Usage
 
-### Scout external content
-```
-/scout [url]
-/scout [url1] [url2] [url3]
-```
-Evaluates external content sources (articles, videos, podcasts, posts) against your pillars and prior art. Produces a scored Scout Report with proposed angles.
+| Goal | How |
+|---|---|
+| Scout external content | `/scout [url] [url2 …]` |
+| Write a blog article | *"Write a blog post about [topic]. Target the keyword '[keyword]'."* |
+| Write a case study | *"Write a case study about [project]. Here's what happened: …"* |
+| Atomize into posts | *"Take my latest article and create LinkedIn posts from it."* |
+| Expand a post | *"Expand my post about [topic] into a full blog article."* |
+| Standalone LinkedIn post | *"Write a LinkedIn post about [topic]."* |
+| Schedule posts | *"Propose a schedule for my draft posts for the next 2 weeks."* |
+| Batch publish | `/publish` |
+| Review & score a draft | `/review-content` or *"Review and score [draft file]"* |
+| Grab today's first-comment | `/comment` |
 
-### Write a blog article
-```
-Write a blog post about [topic]. Target the keyword "[keyword]".
-```
+## Scoring system
 
-### Write a case study
-```
-Write a case study about [project]. Here's what happened: [brief description].
-```
-
-### Atomize into LinkedIn posts
-```
-Take my latest article and create LinkedIn posts from it.
-```
-
-### Expand a LinkedIn post
-```
-Expand my post about [topic] into a full blog article.
-```
-
-### Write a standalone LinkedIn post
-```
-Write a LinkedIn post about [topic].
-```
-
-### Schedule posts
-```
-Propose a schedule for my draft posts for the next 2 weeks.
-```
-
-### Batch publish
-```
-/publish
-```
-
-### Review and score a draft
-```
-Review and score [draft file]
-```
-or
-```
-/review-content
-```
-Loads the canonical rubric for the content type (article, case study, or LinkedIn) and produces a standardized scorecard. Five dimensions, each scored /10. Review-only — does not rewrite the draft.
-
-### Grab today's first-comment
-```
-/comment
-```
-
-## Scoring System
-
-All content review uses canonical rubrics in `skills/content-reviewer/rubrics/`. Each rubric defines:
-- **5 dimensions** scored `/10` (dimension names vary by content type)
-- **Score anchors** for 10, 7, and 5 to calibrate scoring
-- **Required fixes** for any dimension scoring ≤7
-- **Locked output format** — same structure every time
+All content review uses canonical rubrics in `skills/content-reviewer/rubrics/`. Each defines 5
+dimensions scored `/10`, score anchors for 10/7/5, required fixes for anything ≤7, and a locked
+output format.
 
 | Content Type | Rubric | Dimensions |
 |---|---|---|
@@ -152,6 +87,6 @@ All content review uses canonical rubrics in `skills/content-reviewer/rubrics/`.
 | Case Study | `rubrics/case-study.md` | Voice, Structure, Evidence, SEO, Editorial |
 | LinkedIn | `rubrics/linkedin.md` | Voice, Structure, Algorithm, Specificity, Editorial |
 
-Each rubric references its source-of-truth strategy file (articles/case studies → `seo-guidelines.md`, LinkedIn → `algorithm.md`) rather than restating rules inline.
-
-The agent reads your voice profile, strategy, SEO guidelines, and swipe files automatically via the appropriate skill.
+Rubrics reference their source-of-truth in `knowledge/` (articles/case studies →
+`seo-guidelines.md`, LinkedIn → `linkedin-algorithm.md`) rather than restating rules inline. The
+agent reads your voice profile, pillars, guidelines, and swipe files automatically.

@@ -10,7 +10,7 @@ Draft a short X post about something you just shipped. Fast, punchy, builder-ene
 ## Prerequisites
 
 - **Skill**: Validates the `x-writer` skill is available.
-- **Topic**: Confirms the topic maps to a content pillar in `{plugin_root}\strategy\pillars.md`.
+- **Topic**: Confirms the topic maps to a content pillar in `{content_root}\strategy\pillars.md`.
 
 ## Input
 
@@ -29,7 +29,7 @@ Once you have enough context, invoke the **`x-writer`** skill. Follow its instru
 When the user approves the final draft produced by `x-writer`, save it to:
 
 ```
-{plugin_root}\x\drafts\YYYY-MM-DD-[slug].md
+{content_root}\drafts\x\YYYY-MM-DD-[slug].md
 ```
 
 With frontmatter:
