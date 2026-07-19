@@ -1,6 +1,6 @@
 # Content Plugin — Adopter-UX Redesign
 
-**Status:** in progress · **Branch:** `content-adopter-ux-redesign`
+**Status:** ✅ complete (Phases 0–4) · **Branch:** `content-adopter-ux-redesign` (content-creator commit `0b77561`; marketplace `9f8c00d`) — not yet merged/pushed · **Verified:** package rebuilt clean (~113KB, zero personal data). Manual step remaining: reinstall the `.plugin` in Cowork and confirm a single working folder (KB) writes with no add-folder prompt.
 
 **Goal:** make `hq-content` a clean, distributable plugin that works well for anyone who installs it,
 while still serving Chris's own multi-plugin setup.
