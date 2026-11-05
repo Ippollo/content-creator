@@ -1,7 +1,7 @@
 {
   "name": "hq-content",
   "description": "Content toolkit: write and atomize articles, LinkedIn and X posts, case studies; scout topics; review against your voice guide. Run 'set up the content plugin' to onboard; stores your data in a configurable content folder (config.md).",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Chris Ippolito"
   },
