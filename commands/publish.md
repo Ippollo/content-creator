@@ -21,6 +21,7 @@ Buffer handles everything after scheduling — no `published` status needed in o
 
 ## Prerequisites
 
+- **`/preflight` has been run on the target week and reports no blockers.** Single-post approval does not cover cross-post failures (duplicate openers, repeated arguments) or conditions that changed after approval (stale news pegs, tenure claims that are no longer true). Do not push a week with open blockers. If preflight has not been run, run it first.
 - The current editorial calendar (e.g., `editorial-calendar-june-2026.md`) has posts with status `approved` and assigned dates
 - Corresponding draft files exist in `linkedin/drafts/`
 - `.env` has a valid `BUFFER_ACCESS_TOKEN`

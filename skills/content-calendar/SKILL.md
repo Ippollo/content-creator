@@ -184,6 +184,7 @@ See [calendar-format.md](docs/calendar-format.md) for the full calendar file for
 - **Receives from**: `linkedin-writer`, `blog-writer`, `case-study-writer` — all produce drafts this skill schedules
 - **Coordinates with**: `content-multiplier` — timing atomization around pillar balance
 - **See also**: `content-reviewer` — quality gate before scheduling
+- **Hands off to**: `content-week-preflight` — week-level gate once a week is locked and every post is approved. Run it before `/publish`; it catches cross-post failures this skill's scheduling rules don't (duplicate openers, repeated arguments between atoms of the same article, stale news pegs, claims that were true when drafted but aren't on the publish date).
 
 ## Output Shape
 
